@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emblem Concepts — OKANA-inspired</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Cormorant+Garamond:wght@400;500&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+  :root{--cream:#EFE9DD;--linen:#FBF8F3;--charcoal:#2E2A26;--taupe:#A89A86;--espresso:#5A4F45;--muted:#7A6E60}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--cream);color:var(--charcoal);font-family:'Montserrat',sans-serif;font-weight:300;padding:48px 20px;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.035 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+  .wrap{max-width:1060px;margin:0 auto}
+  .eyebrow{text-align:center;letter-spacing:6px;text-transform:uppercase;font-size:11px;color:var(--taupe);margin-bottom:8px}
+  h1{font-family:'Playfair Display',serif;font-weight:500;font-size:38px;text-align:center;margin-bottom:6px}
+  .lead{text-align:center;color:var(--espresso);font-size:14px;margin:0 auto 40px;max-width:660px;line-height:1.7}
+  h2{font-family:'Playfair Display',serif;font-weight:500;font-size:24px;text-align:center;margin:48px 0 22px;letter-spacing:1px;border-top:1px solid var(--taupe);padding-top:34px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  @media(max-width:860px){.grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+
+  .emblem{background:var(--cream);border:1px solid #ddd3c2;border-radius:6px;padding:42px 22px 30px;text-align:center}
+  .emblem.dark{background:var(--charcoal)}
+  .topname{font-size:13px;font-weight:300;letter-spacing:13px;text-transform:uppercase;color:var(--charcoal);padding-left:13px;margin-bottom:20px}
+  .dark .topname{color:var(--cream)}
+  .hero{height:118px;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+  .heroO{font-family:'Playfair Display',serif;font-weight:500;font-size:120px;line-height:1;color:var(--charcoal)}
+  .heroM{font-family:'Playfair Display',serif;font-weight:500;font-size:104px;line-height:1;color:var(--charcoal)}
+  .dark .heroO,.dark .heroM{color:var(--cream)}
+  .erule{width:54px;height:1px;background:var(--charcoal);margin:6px auto 16px}
+  .dark .erule{background:var(--cream)}
+  .edesc{font-size:10.5px;font-weight:300;letter-spacing:8px;text-transform:uppercase;color:var(--charcoal)}
+  .dark .edesc{color:var(--taupe)}
+  .label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--taupe);margin-top:20px;border-top:1px dashed #d8cdbb;padding-top:12px}
+
+  .note{text-align:center;color:var(--taupe);font-size:12px;margin-top:46px;line-height:1.7}
+  .rec{max-width:680px;margin:30px auto 0;background:var(--linen);border:1px solid #e3d9c8;border-radius:6px;padding:22px 26px;font-size:13.5px;line-height:1.8;color:var(--espresso)}
+  .rec b{font-family:'Playfair Display',serif;font-weight:500;color:var(--charcoal)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Phase 0 · Emblem Direction</div>
+  <h1>The Emblem</h1>
+  <div class="lead">Inspired by your OKANA reference: tiny name on top · a large central hero mark · a fine rule · a small descriptor below. Here the hero is a letter elegant enough to read as a <b>symbol</b>.</div>
+
+  <!-- ORDO treatments -->
+  <h2>ORDO · the “O” as symbol &amp; letter</h2>
+  <div class="grid">
+
+    <!-- A: bespoke high-contrast O -->
+    <div class="emblem">
+      <div class="topname">ORDO</div>
+      <div class="hero">
+        <svg width="116" height="124" viewBox="0 0 120 130">
+          <path fill="#2E2A26" fill-rule="evenodd"
+            d="M20,65 a40,52 0 1,0 80,0 a40,52 0 1,0 -80,0
+               M38,65 a22,37 0 1,1 44,0 a22,37 0 1,1 -44,0 Z"/>
+        </svg>
+      </div>
+      <div class="erule"></div>
+      <div class="edesc">Professional Organizing</div>
+      <div class="label">A · Bespoke high-contrast O</div>
+    </div>
+
+    <!-- B: ensō break O (calm) -->
+    <div class="emblem">
+      <div class="topname">ORDO</div>
+      <div class="hero">
+        <svg width="116" height="124" viewBox="0 0 120 130" fill="none" stroke="#2E2A26">
+          <path d="M88,40 A46,52 0 1 0 94,82" stroke-width="6" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="erule"></div>
+      <div class="edesc">Professional Organizing</div>
+      <div class="label">B · Open “ensō” O — order + calm</div>
+    </div>
+
+    <!-- C: nested-arc vessel O -->
+    <div class="emblem">
+      <div class="topname">ORDO</div>
+      <div class="hero">
+        <svg width="116" height="124" viewBox="0 0 120 130" fill="none" stroke="#2E2A26" stroke-width="4">
+          <ellipse cx="60" cy="65" rx="38" ry="50"/>
+          <ellipse cx="60" cy="65" rx="20" ry="30" stroke="#A89A86"/>
+        </svg>
+      </div>
+      <div class="erule"></div>
+      <div class="edesc">Professional Organizing</div>
+      <div class="label">C · Concentric — spaces within spaces</div>
+    </div>
+
+  </div>
+
+  <!-- comparison -->
+  <h2>Comparison · names &amp; reversed</h2>
+  <div class="grid">
+
+    <div class="emblem">
+      <div class="topname">ORDO</div>
+      <div class="hero"><div class="heroO">O</div></div>
+      <div class="erule"></div>
+      <div class="edesc">Professional Organizing</div>
+      <div class="label">Playfair “O” (font reference)</div>
+    </div>
+
+    <div class="emblem">
+      <div class="topname">MISE</div>
+      <div class="hero"><div class="heroM">M</div></div>
+      <div class="erule"></div>
+      <div class="edesc">Everything In Its Place</div>
+      <div class="label">MISE “M” — for comparison</div>
+    </div>
+
+    <div class="emblem dark">
+      <div class="topname">ORDO</div>
+      <div class="hero">
+        <svg width="116" height="124" viewBox="0 0 120 130">
+          <path fill="#EFE9DD" fill-rule="evenodd"
+            d="M20,65 a40,52 0 1,0 80,0 a40,52 0 1,0 -80,0
+               M38,65 a22,37 0 1,1 44,0 a22,37 0 1,1 -44,0 Z"/>
+        </svg>
+      </div>
+      <div class="erule"></div>
+      <div class="edesc">Professional Organizing</div>
+      <div class="label">Reversed · on charcoal</div>
+    </div>
+
+  </div>
+
+  <div class="rec">
+    <b>Agency note:</b> The “O” is a rare gift — <em>ORDO</em> opens and closes with it, and a circle already means order, wholeness, and calm. So the letter <em>is</em> the symbol; it never reads as a plain monogram. <b>MISE’s “M”</b> is elegant but doesn’t carry that built-in meaning. If we go this emblem route, <b>ORDO</b> is the natural fit. Treatment <b>A</b> (bespoke high-contrast O) is closest to OKANA; <b>B</b> adds a calm, hand-drawn opening; <b>C</b> nods to “spaces within spaces.”
+  </div>
+
+  <div class="note">All marks are scalable vectors on linen texture · pick a treatment + confirm the name to lock the identity</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 480" width="420" height="480" role="img" aria-label="Ordo">
+  <title>Ordo — Emblem (OKANA-inspired): name · hero O · rule · descriptor</title>
+  <defs>
+    <filter id="paperE" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.04 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+
+  <rect width="420" height="480" fill="#EFE9DD"/>
+  <rect width="420" height="480" fill="#EFE9DD" filter="url(#paperE)"/>
+
+  <!-- top name -->
+  <text x="210" y="150"
+        font-family="'Montserrat','Inter',Helvetica,Arial,sans-serif"
+        font-size="17" font-weight="300" letter-spacing="16"
+        text-anchor="middle" fill="#2E2A26">ORDO</text>
+
+  <!-- hero mark: bespoke high-contrast Didone O (two ellipses, evenodd) -->
+  <path fill="#2E2A26" fill-rule="evenodd"
+        d="M210 198
+           a44 56 0 1 0 0.1 0 z
+           M210 222
+           a26 38 0 1 1 -0.1 0 z"/>
+
+  <!-- rule -->
+  <line x1="180" y1="340" x2="240" y2="340" stroke="#2E2A26" stroke-width="1"/>
+
+  <!-- descriptor -->
+  <text x="210" y="372"
+        font-family="'Montserrat','Inter',Helvetica,Arial,sans-serif"
+        font-size="11" font-weight="300" letter-spacing="9"
+        text-anchor="middle" fill="#2E2A26">PROFESSIONAL ORGANIZING</text>
+</svg>
