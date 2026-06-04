@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logo Styles — Ordo & Mise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--cream:#EFE9DD;--linen:#FBF8F3;--charcoal:#2E2A26;--taupe:#A89A86;--espresso:#5A4F45;--muted:#7A6E60}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--cream);color:var(--charcoal);font-family:'Montserrat',sans-serif;font-weight:300;padding:48px 20px;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.035 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+  .wrap{max-width:1060px;margin:0 auto}
+  .eyebrow{text-align:center;letter-spacing:6px;text-transform:uppercase;font-size:11px;color:var(--taupe);margin-bottom:8px}
+  h1{font-family:'Playfair Display',serif;font-weight:500;font-size:38px;text-align:center;margin-bottom:6px}
+  .lead{text-align:center;color:var(--espresso);font-size:14px;margin-bottom:44px}
+  h2{font-family:'Playfair Display',serif;font-weight:500;font-size:30px;text-align:center;margin:46px 0 24px;letter-spacing:6px;
+     border-top:1px solid var(--taupe);padding-top:36px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  @media(max-width:780px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--cream);border:1px solid #ddd3c2;border-radius:6px;padding:46px 26px;text-align:center;
+    display:flex;flex-direction:column;justify-content:center;min-height:230px}
+  .card.dark{background:var(--charcoal)}
+  .tag{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--taupe);margin-bottom:26px}
+  .dark .tag{color:var(--taupe)}
+  .descr{font-size:10.5px;letter-spacing:9px;text-transform:uppercase;color:var(--muted);margin-top:16px}
+  .dark .descr{color:var(--taupe)}
+
+  /* shared */
+  .pf{font-family:'Playfair Display',serif}
+  .cg{font-family:'Cormorant Garamond',serif}
+  .rule{display:flex;align-items:center;justify-content:center;gap:11px;margin:14px 0 6px}
+  .rule span{width:54px;height:1px;background:var(--taupe)}
+  .rule i{width:4px;height:4px;border-radius:50%;background:var(--espresso)}
+  .dark .rule i{background:var(--taupe)}
+
+  /* S1 editorial caps */
+  .s1{font-family:'Playfair Display',serif;font-weight:500;font-size:74px;letter-spacing:12px;line-height:1;color:var(--charcoal)}
+  .dark .s1{color:var(--cream)}
+  /* S2 monogram */
+  .ring{width:96px;height:96px;border:1px solid var(--taupe);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+  .ring b{font-family:'Playfair Display',serif;font-weight:500;font-size:48px;color:var(--charcoal)}
+  .s2name{font-family:'Playfair Display',serif;font-weight:500;font-size:40px;letter-spacing:8px;color:var(--charcoal)}
+  /* S3 lowercase soft */
+  .s3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:80px;letter-spacing:4px;color:var(--charcoal);line-height:1}
+  /* S4 minimal wide caps, thin */
+  .s4{font-family:'Montserrat',sans-serif;font-weight:200;font-size:46px;letter-spacing:22px;color:var(--charcoal);padding-left:22px}
+  /* S5 boxed monogram favicon row */
+  .boxrow{display:flex;gap:14px;justify-content:center;align-items:center}
+  .box{width:64px;height:64px;border-radius:12px;background:var(--charcoal);color:var(--cream);
+    font-family:'Playfair Display',serif;font-size:32px;display:flex;align-items:center;justify-content:center}
+  .box.outline{background:transparent;border:1px solid var(--charcoal);color:var(--charcoal)}
+  .box.serifcg{font-family:'Cormorant Garamond',serif}
+  .s5word{font-family:'Playfair Display',serif;font-weight:500;font-size:34px;letter-spacing:7px;color:var(--charcoal)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Phase 0 · Logo Exploration</div>
+  <h1>Logo Styles</h1>
+  <div class="lead">Five treatments each, for <b>ORDO</b> and <b>MISE</b> — same editorial system, different personalities.</div>
+
+  <!-- ============ ORDO ============ -->
+  <h2>O R D O</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="tag">Style 1 · Editorial Caps</div>
+      <div class="s1">ORDO</div>
+      <div class="rule"><span></span><i></i><span></span></div>
+      <div class="descr">Professional Organizing</div>
+    </div>
+
+    <div class="card">
+      <div class="tag">Style 2 · Monogram + Name</div>
+      <div class="ring"><b>O</b></div>
+      <div class="s2name">ORDO</div>
+      <div class="descr">Professional Organizing</div>
+    </div>
+
+    <div class="card">
+      <div class="tag">Style 3 · Lowercase Soft</div>
+      <div class="s3">ordo</div>
+      <div class="descr">Professional Organizing</div>
+    </div>
+
+    <div class="card">
+      <div class="tag">Style 4 · Minimal Wide</div>
+      <div class="s4">ORDO</div>
+      <div class="descr" style="margin-top:22px">Professional Organizing</div>
+    </div>
+
+    <div class="card dark">
+      <div class="tag">Style 5 · Marks &amp; Reversed</div>
+      <div class="boxrow">
+        <div class="box">O</div>
+        <div class="box outline" style="border-color:var(--cream);color:var(--cream)">O</div>
+        <div class="s5word" style="color:var(--cream)">ORDO</div>
+      </div>
+      <div class="descr">Favicon · Avatar · Reversed lockup</div>
+    </div>
+
+    <div class="card">
+      <div class="tag">Style 5 · Marks (light)</div>
+      <div class="boxrow">
+        <div class="box">O</div>
+        <div class="box outline">O</div>
+        <div class="box serifcg">O</div>
+      </div>
+      <div class="descr">Solid · Outline · Serif variant</div>
+    </div>
+
+  </div>
+
+  <!-- ============ MISE ============ -->
+  <h2>M I S E</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="tag">Style 1 · Editorial Caps</div>
+      <div class="s1">MISE</div>
+      <div class="rule"><span></span><i></i><span></span></div>
+      <div class="descr">Everything In Its Place</div>
+    </div>
+
+    <div class="card">
+      <div class="tag">Style 2 · Monogram + Name</div>
+      <div class="ring"><b>M</b></div>
+      <div class="s2name">MISE</div>
+      <div class="descr">Everything In Its Place</div>
+    </div>
+
+    <div class="card">
+      <div class="tag">Style 3 · Lowercase Soft</div>
+      <div class="s3">mise</div>
+      <div class="descr">Everything In Its Place</div>
+    </div>
+
+    <div class="card">
+      <div class="tag">Style 4 · Minimal Wide</div>
+      <div class="s4">MISE</div>
+      <div class="descr" style="margin-top:22px">Everything In Its Place</div>
+    </div>
+
+    <div class="card dark">
+      <div class="tag">Style 5 · Marks &amp; Reversed</div>
+      <div class="boxrow">
+        <div class="box">M</div>
+        <div class="box outline" style="border-color:var(--cream);color:var(--cream)">M</div>
+        <div class="s5word" style="color:var(--cream)">MISE</div>
+      </div>
+      <div class="descr">Favicon · Avatar · Reversed lockup</div>
+    </div>
+
+    <div class="card">
+      <div class="tag">Style 5 · Marks (light)</div>
+      <div class="boxrow">
+        <div class="box">M</div>
+        <div class="box outline">M</div>
+        <div class="box serifcg">M</div>
+      </div>
+      <div class="descr">Solid · Outline · Serif variant</div>
+    </div>
+
+  </div>
+
+  <div style="text-align:center;color:var(--taupe);font-size:12px;margin-top:46px">
+    All rendered in the brand system · Playfair Display + Cormorant + Montserrat on linen texture
+  </div>
+</div>
+</body>
+</html>
