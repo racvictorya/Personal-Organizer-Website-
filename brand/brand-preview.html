@@ -3,74 +3,90 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Structured Living — Brand Preview</title>
+<title>Structured Living — Brand Preview (Editorial Refinement)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Cormorant+Garamond:wght@400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ivory:#F5F0E8; --linen:#FBF8F3; --charcoal:#2E2A26;
-    --taupe:#A89A86; --espresso:#5A4F45; --sage:#C4C7B8; --white:#FFFEFB;
+    --cream:#EFE9DD; --linen:#FBF8F3; --charcoal:#2E2A26;
+    --taupe:#A89A86; --clay:#B0654A; --espresso:#5A4F45; --sage:#C4C7B8; --muted:#7A6E60;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--ivory);color:var(--charcoal);
-    font-family:'Montserrat',sans-serif;font-weight:300;padding:48px 24px;line-height:1.7}
+  body{
+    background:var(--cream);color:var(--charcoal);
+    font-family:'Montserrat',sans-serif;font-weight:300;padding:56px 24px;line-height:1.75;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.035 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
   .wrap{max-width:920px;margin:0 auto}
-  h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:44px;letter-spacing:2px;text-align:center}
-  .sub{text-align:center;letter-spacing:4px;text-transform:uppercase;font-size:12px;color:var(--taupe);margin:8px 0 56px}
-  h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:26px;margin:48px 0 18px;border-bottom:1px solid var(--taupe);padding-bottom:8px}
-  .logo-card{background:var(--linen);border:1px solid #e8e0d4;border-radius:8px;padding:40px;margin-bottom:24px;text-align:center}
-  .logo-card .tag{display:inline-block;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--taupe);margin-bottom:24px}
+  .eyebrow{text-align:center;letter-spacing:6px;text-transform:uppercase;font-size:11px;color:var(--taupe);margin-bottom:10px}
+  h1{font-family:'Playfair Display',serif;font-weight:500;font-size:46px;letter-spacing:2px;text-align:center}
+  .sub{text-align:center;letter-spacing:5px;text-transform:uppercase;font-size:11px;color:var(--taupe);margin:8px 0 56px}
+  h2{font-family:'Playfair Display',serif;font-weight:500;font-size:24px;margin:52px 0 18px;border-bottom:1px solid var(--taupe);padding-bottom:10px;letter-spacing:.5px}
+  .logo-card{background:var(--cream);border:1px solid #ddd3c2;border-radius:6px;padding:54px 40px;margin-bottom:22px;text-align:center}
+  .logo-card.dark{background:var(--charcoal)}
+  .pill{display:inline-block;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--taupe);margin-bottom:30px}
 
-  /* Direction A — Wordmark */
-  .wm-top{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:54px;letter-spacing:14px;color:var(--charcoal);padding-left:14px}
-  .wm-rule{width:260px;height:1px;background:var(--taupe);margin:6px auto 10px}
-  .wm-bot{font-weight:300;font-size:22px;letter-spacing:18px;color:var(--espresso);padding-left:18px}
+  /* Primary wordmark */
+  .wm-top{font-family:'Playfair Display',serif;font-weight:500;font-size:64px;letter-spacing:8px;color:var(--charcoal);line-height:1}
+  .rule{display:flex;align-items:center;justify-content:center;gap:14px;margin:14px 0 8px}
+  .rule span{width:80px;height:1px;background:var(--taupe)}
+  .rule i{width:5px;height:5px;border-radius:50%;background:var(--espresso);display:block}
+  .wm-bot{font-family:'Playfair Display',serif;font-weight:400;font-size:42px;letter-spacing:26px;color:var(--charcoal);padding-left:26px}
+  .descr{font-weight:300;font-size:11px;letter-spacing:11px;text-transform:uppercase;color:var(--muted);margin-top:22px}
 
-  /* Direction B — Mark + wordmark */
-  .mark{display:inline-block;width:70px;height:70px;border:2px solid var(--taupe);border-radius:6px;position:relative;margin-bottom:18px}
-  .mark i{position:absolute;left:16px;height:4px;border-radius:2px;display:block}
-  .mark i:nth-child(1){top:22px;width:38px;background:var(--charcoal)}
-  .mark i:nth-child(2){top:33px;width:27px;background:var(--espresso)}
-  .mark i:nth-child(3){top:44px;width:16px;background:var(--taupe)}
-  .mk-name{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:40px;letter-spacing:6px;color:var(--charcoal)}
-  .mk-sub{font-weight:300;font-size:12px;letter-spacing:7px;text-transform:uppercase;color:var(--taupe);margin-top:6px}
+  /* Monogram */
+  .mono-ring{width:120px;height:120px;border:1px solid var(--taupe);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 26px}
+  .mono-ring b{font-family:'Playfair Display',serif;font-weight:500;font-size:62px;color:var(--charcoal)}
+  .mono-name{font-family:'Playfair Display',serif;font-weight:500;font-size:34px;letter-spacing:5px}
+  .dark .mono-ring{border-color:var(--taupe)}
+  .dark .mono-ring b,.dark .mono-name{color:var(--cream)}
+  .dark .descr{color:var(--taupe)}
 
-  .swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:14px}
-  .sw{border-radius:8px;overflow:hidden;border:1px solid #e8e0d4;font-size:12px}
-  .sw .chip{height:72px}
+  .swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:14px}
+  .sw{border-radius:8px;overflow:hidden;border:1px solid #ddd3c2;font-size:12px}
+  .sw .chip{height:74px}
   .sw .meta{padding:10px;background:var(--linen)}
   .sw b{display:block;font-weight:500;font-size:13px}
   .sw code{color:var(--taupe);font-size:11px}
-  .type-row{margin:14px 0}
-  .serif{font-family:'Cormorant Garamond',serif}
-  .note{text-align:center;color:var(--taupe);font-size:12px;margin-top:48px;letter-spacing:1px}
+  .type-row{margin:16px 0}
+  .pf{font-family:'Playfair Display',serif}
+  .note{text-align:center;color:var(--taupe);font-size:12px;margin-top:52px;letter-spacing:1px}
 </style>
 </head>
 <body>
 <div class="wrap">
+  <div class="eyebrow">Refined · Editorial Direction</div>
   <h1>Structured Living</h1>
-  <div class="sub">Brand Preview · Phase 0</div>
+  <div class="sub">Brand Preview · Phase 0 · v2</div>
 
-  <h2>Logo — Direction A · Refined Wordmark</h2>
+  <h2>Primary Logo · Editorial Wordmark</h2>
   <div class="logo-card">
-    <span class="tag">Option A</span>
+    <span class="pill">Primary</span>
     <div class="wm-top">STRUCTURED</div>
-    <div class="wm-rule"></div>
+    <div class="rule"><span></span><i></i><span></span></div>
     <div class="wm-bot">LIVING</div>
+    <div class="descr">Professional Organizing</div>
   </div>
 
-  <h2>Logo — Direction B · Geometric Mark + Wordmark</h2>
+  <h2>Compact Mark · SL Monogram</h2>
   <div class="logo-card">
-    <span class="tag">Option B</span>
-    <div class="mark"><i></i><i></i><i></i></div>
-    <div class="mk-name">Structured Living</div>
-    <div class="mk-sub">Professional Organizing</div>
+    <span class="pill">Monogram</span>
+    <div class="mono-ring"><b>SL</b></div>
+    <div class="mono-name">Structured Living</div>
+    <div class="descr">Professional Organizing</div>
   </div>
 
-  <h2>Color Palette — Warm Neutrals</h2>
+  <div class="logo-card dark">
+    <span class="pill">Reversed · on charcoal</span>
+    <div class="mono-ring"><b>SL</b></div>
+    <div class="mono-name">Structured Living</div>
+    <div class="descr">Professional Organizing</div>
+  </div>
+
+  <h2>Color Palette · Warm Neutral Core</h2>
   <div class="swatches">
-    <div class="sw"><div class="chip" style="background:#F5F0E8"></div><div class="meta"><b>Warm Ivory</b><code>#F5F0E8</code></div></div>
+    <div class="sw"><div class="chip" style="background:#EFE9DD"></div><div class="meta"><b>Linen Cream</b><code>#EFE9DD</code></div></div>
     <div class="sw"><div class="chip" style="background:#FBF8F3"></div><div class="meta"><b>Soft Linen</b><code>#FBF8F3</code></div></div>
     <div class="sw"><div class="chip" style="background:#2E2A26"></div><div class="meta"><b>Charcoal</b><code>#2E2A26</code></div></div>
     <div class="sw"><div class="chip" style="background:#A89A86"></div><div class="meta"><b>Warm Taupe</b><code>#A89A86</code></div></div>
@@ -78,17 +94,26 @@
     <div class="sw"><div class="chip" style="background:#C4C7B8"></div><div class="meta"><b>Sage Whisper</b><code>#C4C7B8</code></div></div>
   </div>
 
-  <h2>Typography</h2>
-  <div class="type-row">
-    <div class="serif" style="font-size:38px;font-weight:500">Cormorant Garamond — Headings</div>
-    <div class="serif" style="font-size:18px;color:var(--espresso)">Elegant, high-contrast luxury serif for headlines &amp; the logo.</div>
-  </div>
-  <div class="type-row">
-    <div style="font-size:24px;font-weight:400">Montserrat — Body &amp; UI</div>
-    <div style="font-size:15px;color:var(--espresso)">Clean, modern, highly readable sans-serif for paragraphs, navigation, and buttons.</div>
+  <h2>Optional Accent · Not Selected Yet</h2>
+  <p style="font-size:14px;color:var(--espresso);margin-bottom:16px">The core is a refined warm-neutral monochrome. A single accent <em>may</em> be added later — here are candidates to react to. None chosen yet.</p>
+  <div class="swatches">
+    <div class="sw"><div class="chip" style="background:#B0654A"></div><div class="meta"><b>Clay / Terracotta</b><code>#B0654A</code></div></div>
+    <div class="sw"><div class="chip" style="background:#8A9A7B"></div><div class="meta"><b>Muted Sage</b><code>#8A9A7B</code></div></div>
+    <div class="sw"><div class="chip" style="background:#B89B5E"></div><div class="meta"><b>Antique Gold</b><code>#B89B5E</code></div></div>
+    <div class="sw"><div class="chip" style="background:#C9A29A"></div><div class="meta"><b>Dusty Rose</b><code>#C9A29A</code></div></div>
   </div>
 
-  <div class="note">Drafts for review · refine via AI tools and replace files in /brand/logo/</div>
+  <h2>Typography</h2>
+  <div class="type-row">
+    <div class="pf" style="font-size:42px;font-weight:500">Playfair Display — Logo &amp; Display</div>
+    <div class="pf" style="font-size:18px;color:var(--espresso)">High-contrast editorial Didone serif — the Aurora / SOIL energy.</div>
+  </div>
+  <div class="type-row">
+    <div style="font-size:22px;font-weight:400">Montserrat — Body &amp; UI</div>
+    <div style="font-size:15px;color:var(--espresso)">Clean modern sans-serif; spaced caps for descriptors &amp; navigation.</div>
+  </div>
+
+  <div class="note">Drafts for client review · refine via AI tools and replace files in /brand/logo/</div>
 </div>
 </body>
 </html>

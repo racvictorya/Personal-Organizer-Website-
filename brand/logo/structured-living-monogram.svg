@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" width="680" height="420" role="img" aria-label="Structured Living monogram">
+  <title>Structured Living — SL Monogram + Wordmark (Alvéa Haus-inspired luxury restraint)</title>
+  <defs>
+    <filter id="paper2" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.045 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+
+  <rect width="680" height="420" fill="#EFE9DD"/>
+  <rect width="680" height="420" fill="#EFE9DD" filter="url(#paper2)"/>
+
+  <!-- Monogram: SL in high-contrast serif, framed by a thin elegant ring -->
+  <circle cx="340" cy="150" r="78" fill="none" stroke="#A89A86" stroke-width="1.25"/>
+  <text x="340" y="178"
+        font-family="'Playfair Display','Bodoni Moda',Didot,'Times New Roman',serif"
+        font-size="92" font-weight="500" letter-spacing="2"
+        text-anchor="middle" fill="#2E2A26">SL</text>
+
+  <!-- Wordmark beneath -->
+  <text x="340" y="300"
+        font-family="'Playfair Display','Bodoni Moda',Didot,'Times New Roman',serif"
+        font-size="46" font-weight="500" letter-spacing="7"
+        text-anchor="middle" fill="#2E2A26">Structured Living</text>
+  <text x="340" y="336"
+        font-family="'Montserrat','Inter',Helvetica,Arial,sans-serif"
+        font-size="12" font-weight="300" letter-spacing="11"
+        text-anchor="middle" fill="#7A6E60">PROFESSIONAL ORGANIZING</text>
+</svg>
