@@ -1,4 +1,4 @@
-# Structured Living — Business Context
+# ORDO — Business Context
 
 > **Single source of truth.** Every page, asset, design decision, and future update must stay consistent with this document. Preserve the full business identity here.
 
@@ -6,7 +6,7 @@
 
 ## Business Identity
 
-- **Business Name:** Structured Living
+- **Business Name:** ORDO
 - **Industry:** Professional Organizing
 - **Service Area:** New York & New Jersey
 - **Primary Markets:** Residential + Medical/Healthcare

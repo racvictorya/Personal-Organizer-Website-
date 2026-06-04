@@ -1,4 +1,4 @@
-# Structured Living — Brand Guidelines
+# ORDO — Brand Guidelines
 
 > Visual identity system. All website design, marketing, and assets follow these rules.
 
@@ -6,9 +6,9 @@
 
 ## Logo
 
-**Name:** Structured Living
-**Refined direction (from client references — Aurora, noyo, Alvéa Haus, SOIL):**
-Editorial, type-led identity. High-contrast Didone serif, all-caps stacked wordmark, a tiny spaced-caps descriptor, a subtle signature detail (thin rule + clay dot), and an elegant **SL monogram** for the compact mark — all on a **textured cream** ground. One color maximum; extreme negative space.
+**Name:** ORDO ✓ *locked*
+**Direction (from client references — yin-yang arcs, OA monogram, embossed marks):**
+Conceptual symbol mark — a thin-line form that carries the *idea* of transformation and order, not just a styled letter. Paired with the name "ORDO" in a Didone editorial wordmark and a spaced-caps descriptor. Mark style still being finalized — see `brand/logo-marks.html` for six concepts under review.
 
 Draft SVG concepts live in `brand/logo/`:
 - `structured-living-wordmark.svg` — **Primary**: editorial Didone wordmark, stacked, with signature rule + clay dot
