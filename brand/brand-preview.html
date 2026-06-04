@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Structured Living — Brand Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#F5F0E8; --linen:#FBF8F3; --charcoal:#2E2A26;
+    --taupe:#A89A86; --espresso:#5A4F45; --sage:#C4C7B8; --white:#FFFEFB;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--ivory);color:var(--charcoal);
+    font-family:'Montserrat',sans-serif;font-weight:300;padding:48px 24px;line-height:1.7}
+  .wrap{max-width:920px;margin:0 auto}
+  h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:44px;letter-spacing:2px;text-align:center}
+  .sub{text-align:center;letter-spacing:4px;text-transform:uppercase;font-size:12px;color:var(--taupe);margin:8px 0 56px}
+  h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:26px;margin:48px 0 18px;border-bottom:1px solid var(--taupe);padding-bottom:8px}
+  .logo-card{background:var(--linen);border:1px solid #e8e0d4;border-radius:8px;padding:40px;margin-bottom:24px;text-align:center}
+  .logo-card .tag{display:inline-block;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--taupe);margin-bottom:24px}
+
+  /* Direction A — Wordmark */
+  .wm-top{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:54px;letter-spacing:14px;color:var(--charcoal);padding-left:14px}
+  .wm-rule{width:260px;height:1px;background:var(--taupe);margin:6px auto 10px}
+  .wm-bot{font-weight:300;font-size:22px;letter-spacing:18px;color:var(--espresso);padding-left:18px}
+
+  /* Direction B — Mark + wordmark */
+  .mark{display:inline-block;width:70px;height:70px;border:2px solid var(--taupe);border-radius:6px;position:relative;margin-bottom:18px}
+  .mark i{position:absolute;left:16px;height:4px;border-radius:2px;display:block}
+  .mark i:nth-child(1){top:22px;width:38px;background:var(--charcoal)}
+  .mark i:nth-child(2){top:33px;width:27px;background:var(--espresso)}
+  .mark i:nth-child(3){top:44px;width:16px;background:var(--taupe)}
+  .mk-name{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:40px;letter-spacing:6px;color:var(--charcoal)}
+  .mk-sub{font-weight:300;font-size:12px;letter-spacing:7px;text-transform:uppercase;color:var(--taupe);margin-top:6px}
+
+  .swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:14px}
+  .sw{border-radius:8px;overflow:hidden;border:1px solid #e8e0d4;font-size:12px}
+  .sw .chip{height:72px}
+  .sw .meta{padding:10px;background:var(--linen)}
+  .sw b{display:block;font-weight:500;font-size:13px}
+  .sw code{color:var(--taupe);font-size:11px}
+  .type-row{margin:14px 0}
+  .serif{font-family:'Cormorant Garamond',serif}
+  .note{text-align:center;color:var(--taupe);font-size:12px;margin-top:48px;letter-spacing:1px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Structured Living</h1>
+  <div class="sub">Brand Preview · Phase 0</div>
+
+  <h2>Logo — Direction A · Refined Wordmark</h2>
+  <div class="logo-card">
+    <span class="tag">Option A</span>
+    <div class="wm-top">STRUCTURED</div>
+    <div class="wm-rule"></div>
+    <div class="wm-bot">LIVING</div>
+  </div>
+
+  <h2>Logo — Direction B · Geometric Mark + Wordmark</h2>
+  <div class="logo-card">
+    <span class="tag">Option B</span>
+    <div class="mark"><i></i><i></i><i></i></div>
+    <div class="mk-name">Structured Living</div>
+    <div class="mk-sub">Professional Organizing</div>
+  </div>
+
+  <h2>Color Palette — Warm Neutrals</h2>
+  <div class="swatches">
+    <div class="sw"><div class="chip" style="background:#F5F0E8"></div><div class="meta"><b>Warm Ivory</b><code>#F5F0E8</code></div></div>
+    <div class="sw"><div class="chip" style="background:#FBF8F3"></div><div class="meta"><b>Soft Linen</b><code>#FBF8F3</code></div></div>
+    <div class="sw"><div class="chip" style="background:#2E2A26"></div><div class="meta"><b>Charcoal</b><code>#2E2A26</code></div></div>
+    <div class="sw"><div class="chip" style="background:#A89A86"></div><div class="meta"><b>Warm Taupe</b><code>#A89A86</code></div></div>
+    <div class="sw"><div class="chip" style="background:#5A4F45"></div><div class="meta"><b>Espresso</b><code>#5A4F45</code></div></div>
+    <div class="sw"><div class="chip" style="background:#C4C7B8"></div><div class="meta"><b>Sage Whisper</b><code>#C4C7B8</code></div></div>
+  </div>
+
+  <h2>Typography</h2>
+  <div class="type-row">
+    <div class="serif" style="font-size:38px;font-weight:500">Cormorant Garamond — Headings</div>
+    <div class="serif" style="font-size:18px;color:var(--espresso)">Elegant, high-contrast luxury serif for headlines &amp; the logo.</div>
+  </div>
+  <div class="type-row">
+    <div style="font-size:24px;font-weight:400">Montserrat — Body &amp; UI</div>
+    <div style="font-size:15px;color:var(--espresso)">Clean, modern, highly readable sans-serif for paragraphs, navigation, and buttons.</div>
+  </div>
+
+  <div class="note">Drafts for review · refine via AI tools and replace files in /brand/logo/</div>
+</div>
+</body>
+</html>
