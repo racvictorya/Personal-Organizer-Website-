@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORDO — The Mark</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#EDE7DA; --charcoal:#2A2520; --taupe:#A89A86;
+    --espresso:#5A4F45; --muted:#7A6E60; --linen:#F5F0E8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--cream); color:var(--charcoal);
+    font-family:'Montserrat',sans-serif; font-weight:300; padding:56px 20px;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.55' numOctaves='4' seed='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .wrap{max-width:1040px;margin:0 auto}
+
+  /* type utils */
+  .eyebrow{text-align:center;letter-spacing:7px;text-transform:uppercase;font-size:10px;color:var(--taupe);margin-bottom:10px}
+  h1{font-family:'Playfair Display',serif;font-weight:400;font-size:34px;text-align:center;margin-bottom:6px;letter-spacing:1px}
+  .lead{text-align:center;color:var(--muted);font-size:13px;margin:0 auto 50px;max-width:560px;line-height:1.9}
+  .sh{font-size:10px;letter-spacing:5px;text-transform:uppercase;color:var(--taupe);text-align:center;
+      padding:30px 0 22px;border-top:1px solid #d8cfc0;margin-top:46px}
+
+  /* grids */
+  .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .g2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  @media(max-width:700px){.g3,.g2{grid-template-columns:1fr 1fr}}
+  @media(max-width:460px){.g3,.g2{grid-template-columns:1fr}}
+
+  /* card */
+  .card{
+    background:var(--cream);border:1px solid #d5cbb8;border-radius:4px;
+    display:flex;flex-direction:column;align-items:center;
+    justify-content:center;padding:44px 20px 32px;text-align:center;
+    min-height:260px;
+  }
+  .card.dk{background:var(--charcoal)}
+  .card.linen{background:var(--linen)}
+  .tag{font-size:9.5px;letter-spacing:3px;text-transform:uppercase;color:var(--taupe);margin-bottom:20px}
+  .dk .tag{color:#7a6e60}
+  .clabel{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--taupe);margin-top:20px;
+    border-top:1px dashed #d5cbb8;padding-top:14px;width:100%}
+  .dk .clabel{color:#6a5e50;border-color:#3a3028}
+
+  /* wordmark elements */
+  .wm-name{font-family:'Playfair Display',serif;font-weight:400;font-size:42px;letter-spacing:22px;
+    color:var(--charcoal);padding-left:22px;margin-top:18px}
+  .dk .wm-name{color:var(--cream)}
+  .wm-name-sm{font-family:'Playfair Display',serif;font-weight:400;font-size:28px;letter-spacing:16px;
+    color:var(--charcoal);padding-left:16px;margin-top:14px}
+  .dk .wm-name-sm{color:var(--cream)}
+  .wm-rule{width:42px;height:1px;background:var(--charcoal);margin:10px auto 12px}
+  .dk .wm-rule{background:#7a6e60}
+  .wm-desc{font-size:9px;letter-spacing:7px;text-transform:uppercase;color:var(--muted)}
+  .dk .wm-desc{color:#7a6e60}
+  .wm-name-top{font-size:10px;font-weight:300;letter-spacing:12px;text-transform:uppercase;
+    color:var(--charcoal);padding-left:12px;margin-bottom:22px}
+  .dk .wm-name-top{color:var(--cream)}
+  .horiz-wrap{display:flex;align-items:center;justify-content:center;gap:26px}
+  .horiz-text{text-align:left}
+  .horiz-text .wm-name{margin-top:0;font-size:34px;letter-spacing:16px;padding-left:16px}
+  .horiz-text .wm-desc{margin-top:4px}
+
+  /* final note */
+  .note{max-width:680px;margin:44px auto 0;background:var(--linen);border:1px solid #e0d5c0;
+    border-radius:4px;padding:22px 26px;font-size:13px;line-height:1.85;color:var(--espresso);text-align:center}
+  .note b{font-family:'Playfair Display',serif;color:var(--charcoal);font-size:15px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="eyebrow">ORDO · Phase 0 · The Mark</div>
+  <h1>Two Arcs</h1>
+  <div class="lead">Your reference, translated for ORDO — the mark that says: <em>this is where transformation lives.</em> Top arc contained and precise. Bottom arc open and breathing. The space between them is where order begins.</div>
+
+  <!-- ROW 1: Pure mark variations -->
+  <div class="sh">The Mark · Weight &amp; Proportion Variations</div>
+  <div class="g3">
+
+    <!-- Var A: faithful to reference, organic -->
+    <div class="card">
+      <div class="tag">A · Faithful to reference</div>
+      <svg width="160" height="160" viewBox="0 0 160 160" fill="none">
+        <!-- top arc: opens downward ∩ — smaller, more compact -->
+        <path d="M 46,80 C 46,38 114,38 114,80"
+              stroke="#2A2520" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+        <!-- bottom arc: opens upward ∪ — larger, more open -->
+        <path d="M 34,100 C 34,148 126,148 126,100"
+              stroke="#2A2520" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+      </svg>
+      <div class="clabel">Symmetric · open · balanced</div>
+    </div>
+
+    <!-- Var B: slightly thinner, more elegant -->
+    <div class="card">
+      <div class="tag">B · Refined — thinner stroke</div>
+      <svg width="160" height="160" viewBox="0 0 160 160" fill="none">
+        <path d="M 48,80 C 48,40 112,40 112,80"
+              stroke="#2A2520" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+        <path d="M 36,102 C 36,150 124,150 124,102"
+              stroke="#2A2520" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+      </svg>
+      <div class="clabel">Thinner · more delicate · hairline luxury</div>
+    </div>
+
+    <!-- Var C: wider, more open, editorial -->
+    <div class="card">
+      <div class="tag">C · Wide &amp; airy</div>
+      <svg width="160" height="160" viewBox="0 0 160 160" fill="none">
+        <!-- top: tighter arc -->
+        <path d="M 52,76 C 52,46 108,46 108,76"
+              stroke="#2A2520" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+        <!-- bottom: significantly wider, lower -->
+        <path d="M 28,100 C 28,156 132,156 132,100"
+              stroke="#2A2520" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+      </svg>
+      <div class="clabel">Dramatic width contrast · confident</div>
+    </div>
+
+  </div>
+
+  <!-- ROW 2: Full lockup with ORDO name -->
+  <div class="sh">Full Identity Lockup · Mark + ORDO</div>
+  <div class="g3">
+
+    <!-- lockup 1: mark above, name below (like OKANA) -->
+    <div class="card linen">
+      <div class="tag">Stacked · primary lockup</div>
+      <svg width="120" height="120" viewBox="0 0 160 160" fill="none">
+        <path d="M 46,80 C 46,38 114,38 114,80"
+              stroke="#2A2520" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+        <path d="M 34,100 C 34,148 126,148 126,100"
+              stroke="#2A2520" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+      </svg>
+      <div class="wm-name">ORDO</div>
+      <div class="wm-rule"></div>
+      <div class="wm-desc">Professional Organizing</div>
+    </div>
+
+    <!-- lockup 2: name on top, mark below (inverted - elegant) -->
+    <div class="card linen">
+      <div class="tag">Name above mark</div>
+      <div class="wm-name-top">ORDO</div>
+      <svg width="120" height="120" viewBox="0 0 160 160" fill="none">
+        <path d="M 46,80 C 46,38 114,38 114,80"
+              stroke="#2A2520" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+        <path d="M 34,100 C 34,148 126,148 126,100"
+              stroke="#2A2520" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+      </svg>
+      <div class="wm-rule"></div>
+      <div class="wm-desc">Professional Organizing</div>
+    </div>
+
+    <!-- lockup 3: reversed on dark -->
+    <div class="card dk">
+      <div class="tag">Reversed · on charcoal</div>
+      <svg width="120" height="120" viewBox="0 0 160 160" fill="none">
+        <path d="M 46,80 C 46,38 114,38 114,80"
+              stroke="#EDE7DA" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+        <path d="M 34,100 C 34,148 126,148 126,100"
+              stroke="#EDE7DA" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+      </svg>
+      <div class="wm-name">ORDO</div>
+      <div class="wm-rule"></div>
+      <div class="wm-desc">Professional Organizing</div>
+    </div>
+
+  </div>
+
+  <!-- ROW 3: Horizontal + Favicon -->
+  <div class="sh">Horizontal Lockup + Small Scale</div>
+  <div class="g2">
+
+    <!-- horizontal -->
+    <div class="card linen" style="min-height:180px">
+      <div class="tag">Horizontal lockup</div>
+      <div class="horiz-wrap">
+        <svg width="72" height="72" viewBox="0 0 160 160" fill="none">
+          <path d="M 46,80 C 46,38 114,38 114,80"
+                stroke="#2A2520" stroke-width="3.6" stroke-linecap="round" fill="none"/>
+          <path d="M 34,100 C 34,148 126,148 126,100"
+                stroke="#2A2520" stroke-width="3.6" stroke-linecap="round" fill="none"/>
+        </svg>
+        <div class="horiz-text">
+          <div class="wm-name" style="font-size:36px;letter-spacing:18px;padding-left:18px;margin-top:0">ORDO</div>
+          <div class="wm-desc" style="margin-top:6px;text-align:left">Professional Organizing</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- favicon / small scales -->
+    <div class="card linen" style="min-height:180px">
+      <div class="tag">Small scale · favicon · avatar</div>
+      <div style="display:flex;align-items:flex-end;justify-content:center;gap:18px">
+        <!-- 64px -->
+        <div style="text-align:center">
+          <svg width="64" height="64" viewBox="0 0 160 160" fill="none">
+            <path d="M 46,80 C 46,38 114,38 114,80" stroke="#2A2520" stroke-width="6" stroke-linecap="round"/>
+            <path d="M 34,100 C 34,148 126,148 126,100" stroke="#2A2520" stroke-width="6" stroke-linecap="round"/>
+          </svg>
+          <div style="font-size:9px;color:var(--taupe);margin-top:6px;letter-spacing:1px">64px</div>
+        </div>
+        <!-- 40px -->
+        <div style="text-align:center">
+          <svg width="40" height="40" viewBox="0 0 160 160" fill="none">
+            <path d="M 46,80 C 46,38 114,38 114,80" stroke="#2A2520" stroke-width="7" stroke-linecap="round"/>
+            <path d="M 34,100 C 34,148 126,148 126,100" stroke="#2A2520" stroke-width="7" stroke-linecap="round"/>
+          </svg>
+          <div style="font-size:9px;color:var(--taupe);margin-top:6px;letter-spacing:1px">40px</div>
+        </div>
+        <!-- 24px -->
+        <div style="text-align:center">
+          <svg width="24" height="24" viewBox="0 0 160 160" fill="none">
+            <path d="M 46,80 C 46,38 114,38 114,80" stroke="#2A2520" stroke-width="9" stroke-linecap="round"/>
+            <path d="M 34,100 C 34,148 126,148 126,100" stroke="#2A2520" stroke-width="9" stroke-linecap="round"/>
+          </svg>
+          <div style="font-size:9px;color:var(--taupe);margin-top:6px;letter-spacing:1px">24px</div>
+        </div>
+        <!-- favicon box -->
+        <div style="text-align:center">
+          <div style="width:32px;height:32px;background:var(--charcoal);border-radius:6px;
+            display:flex;align-items:center;justify-content:center">
+            <svg width="22" height="22" viewBox="0 0 160 160" fill="none">
+              <path d="M 46,80 C 46,38 114,38 114,80" stroke="#EDE7DA" stroke-width="10" stroke-linecap="round"/>
+              <path d="M 34,100 C 34,148 126,148 126,100" stroke="#EDE7DA" stroke-width="10" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div style="font-size:9px;color:var(--taupe);margin-top:6px;letter-spacing:1px">fav</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="note">
+    <b>This is the mark.</b><br><br>
+    Two arcs. The space between them is the moment a space transforms — before &amp; after, chaos &amp; calm, the work ORDO does. It carries the entire concept of the business in a single gesture. The mark scales beautifully from a 24px favicon to a large-format print. Ready to take to ChatGPT image gen or a designer for a hand-crafted final version — or approve it as-is and we build the website around it.
+  </div>
+
+</div>
+</body>
+</html>

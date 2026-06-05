@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="ORDO">
+  <title>ORDO — The Mark (two arcs: transformation)</title>
+  <!-- top arc: opens downward ∩ — contained, structured -->
+  <path d="M 46,80 C 46,38 114,38 114,80"
+        stroke="#2A2520" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+  <!-- bottom arc: opens upward ∪ — larger, open, breathing -->
+  <path d="M 34,100 C 34,148 126,148 126,100"
+        stroke="#2A2520" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+</svg>
