@@ -154,21 +154,16 @@
   });
 
 
-  // ── Contact form (Formspree) ──────────────────
-  //
-  // Setup (one time, free):
-  //   1. Go to https://formspree.io and create a free account
-  //   2. Click "New Form" — name it "ORDÖ Contact"
-  //   3. Copy the form ID (looks like: xeojpwkj)
-  //   4. Replace YOUR_FORM_ID below AND in contact.html form action
-
-  var FORMSPREE_ID = 'YOUR_FORM_ID';
+  // ── Contact form (Netlify Forms) ─────────────
+  // Activates automatically on Netlify deploy — no setup required.
+  // Submissions arrive at: Netlify dashboard → Forms → "contact"
+  // Netlify will also email each submission to your account email.
 
   var form        = document.getElementById('contact-form');
   var formSuccess = document.getElementById('form-success');
 
   if (form) {
-    form.addEventListener('submit', async function (e) {
+    form.addEventListener('submit', function (e) {
       e.preventDefault();
 
       if (!validateForm(form)) return;
@@ -177,32 +172,24 @@
       submitBtn.textContent = 'Sending…';
       submitBtn.disabled = true;
 
-      var data = {};
-      new FormData(form).forEach(function (value, key) {
-        data[key] = value;
-      });
-
-      try {
-        var res = await fetch('https://formspree.io/f/' + FORMSPREE_ID, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify(data)
-        });
-
-        if (res.ok) {
-          form.style.display = 'none';
-          if (formSuccess) formSuccess.classList.add('visible');
-        } else {
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString()
+      })
+        .then(function (res) {
+          if (res.ok) {
+            form.style.display = 'none';
+            if (formSuccess) formSuccess.classList.add('visible');
+          } else {
+            submitBtn.textContent = 'Try again';
+            submitBtn.disabled = false;
+          }
+        })
+        .catch(function () {
           submitBtn.textContent = 'Try again';
           submitBtn.disabled = false;
-        }
-      } catch (err) {
-        submitBtn.textContent = 'Try again';
-        submitBtn.disabled = false;
-      }
+        });
     });
   }
 
