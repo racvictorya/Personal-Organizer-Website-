@@ -1,84 +1,96 @@
-# ORDO — Brand Guidelines
+# ORDÖ — Brand Guidelines
 
 > Visual identity system. All website design, marketing, and assets follow these rules.
 
 ---
 
-## Logo
+## Logo ✓ LOCKED
 
-**Name:** ORDO ✓ *locked*
-**Direction (from client references — yin-yang arcs, OA monogram, embossed marks):**
-Conceptual symbol mark — a thin-line form that carries the *idea* of transformation and order, not just a styled letter. Paired with the name "ORDO" in a Didone editorial wordmark and a spaced-caps descriptor. Mark style still being finalized — see `brand/logo-marks.html` for six concepts under review.
+**Visual name:** ORDÖ (with umlaut — design signature)
+**Legal / SEO name:** ORDO
 
-Draft SVG concepts live in `brand/logo/`:
-- `structured-living-wordmark.svg` — **Primary**: editorial Didone wordmark, stacked, with signature rule + clay dot
-- `structured-living-monogram.svg` — **Compact mark**: ringed "SL" monogram + wordmark (Alvéa Haus restraint)
-- `structured-living-favicon.svg` — favicon / social avatar (SL monogram on charcoal)
+**Logo 3 — Geometric Sans-Serif on Sage · SELECTED**
 
-These are editable starting points. For final production, refine via AI tools (ChatGPT/DALL-E for concepts → Looka for vectorized brand kit) and replace these files, keeping the same filenames. Outline (convert to paths) the Didone font in final exports so it renders identically everywhere.
+Design DNA extracted from client-created logo (Page 3 of FILE_5324.pdf):
 
-### Reference DNA (locked)
-1. High-contrast **editorial Didone serif** (thick/thin strokes) — not a soft humanist serif
-2. **Textured cream / linen** background — never flat pure white
-3. **One color maximum** — charcoal *or* a single warm clay accent
-4. Tiny **spaced-caps descriptor** ("PROFESSIONAL ORGANIZING")
-5. A subtle **signature detail** + generous negative space
-6. An elegant **monogram** as the compact mark
+1. **Typeface:** Geometric circular sans-serif — clean, modern, the O is a near-perfect circle. Closest match: Futura PT, Brandon Grotesque, or Montserrat ExtraBold/Black. Custom geometric preferred for final production.
+2. **Diaeresis:** Diamond-shaped ◆◆ dots over the Ö — not round circles. A distinctive, designed detail that differentiates the mark.
+3. **Layout:** ORDÖ (large, bold) → thin full-width horizontal rule → PERSONAL ORGANIZER in light wide-spaced caps beneath
+4. **Primary application:** Warm cream/ivory wordmark on silk sage-green background
+5. **Light application:** Charcoal wordmark on warm cream background (for print, white backgrounds)
+6. **No swash. No serif. No calligraphic elements.** Clean, modern, precise.
+
+### Logo Files
+- `brand/logo/ordo-logo3-sage.svg` — Primary: cream on sage green
+- `brand/logo/ordo-logo3-light.svg` — Light: charcoal on cream
+- `brand/logo/ordo-favicon.svg` — Favicon: ORDÖ compact on sage square
 
 ### Logo Usage Rules
-- Maintain generous clear space around the logo (minimum = height of the "S").
-- Never stretch, recolor outside the palette, add shadows, or place on busy backgrounds.
-- Light version on dark backgrounds; dark version on light backgrounds.
+- Maintain generous clear space (minimum = cap height of the O on all sides)
+- Primary: cream on sage · Light: charcoal on cream · never reversed into an unrelated color
+- Never stretch, add shadows, or place on busy photographic backgrounds
+- Diamond dots must remain visible at all sizes — minimum logo width: 120px
 
 ---
 
-## Color Palette — Warm Neutrals (Monochrome Core)
+## Color Palette ✓ UPDATED
+
+Sage green enters as the **primary brand color**. Warm cream is the primary text and background color. The palette is calm, wellness-forward, and aspirational.
 
 | Role | Name | Hex | Usage |
 |---|---|---|---|
-| Primary BG | Linen Cream | `#EFE9DD` | Page backgrounds (textured), large surfaces |
-| Surface | Soft Linen | `#FBF8F3` | Cards, sections, contrast panels |
-| Primary Text | Charcoal | `#2E2A26` | Headings, body text, primary logo |
-| Brand Accent | Warm Taupe | `#A89A86` | Dividers, fine rules, descriptors |
-| Deep Accent | Espresso | `#5A4F45` | Buttons, emphasis, signature dot |
-| Soft Accent | Sage Whisper | `#C4C7B8` | Subtle highlights, medical-section tone |
-| Pure | Warm White | `#FFFEFB` | Text on dark, negative space |
+| **Brand Primary** | Silk Sage | `#8B9E7A` | Hero sections, logo background, primary brand color |
+| **Brand Dark** | Deep Sage | `#6B7D5C` | Hover states, darker accents, footer |
+| **Primary BG** | Warm Cream | `#F5EFE0` | Page backgrounds, cards, light logo version |
+| **Surface** | Soft Linen | `#FBF8F3` | Alternating sections, testimonial cards |
+| **Primary Text** | Charcoal | `#2E2A26` | Body text, headings on light backgrounds |
+| **Logo Text** | Ivory | `#F0E8D6` | Wordmark on sage backgrounds |
+| **Accent** | Warm Taupe | `#A89A86` | Rules, dividers, spaced descriptors |
+| **Deep Accent** | Espresso | `#5A4F45` | Buttons, CTAs, emphasis |
+| **Neutral** | Pale Sage | `#C8D4BD` | Subtle tints, background variation |
 
-**Accent — undecided.** The core stays a refined warm-neutral monochrome (charcoal on cream). A single warm accent may be added later — candidates parked for the client to choose: Clay/Terracotta `#B0654A`, Muted Sage `#8A9A7B`, Antique Gold `#B89B5E`, or Dusty Rose `#C9A29A`. **Not selected yet.**
+**Color mood:** Luxury wellness — calm authority, natural sophistication, aspirational and grounded. The sage signals the health and wellness space the brand uniquely occupies across residential AND medical clients.
 
-**Mood:** editorial boutique luxury — calm, warm, intimate, trustworthy. One accent at a time, used rarely and intentionally.
-
----
-
-## Typography
-
-| Role | Font | Notes |
-|---|---|---|
-| Logo / Display | **Playfair Display** (Didone serif) | High-contrast, editorial — matches the Aurora/SOIL references. Alt: Bodoni Moda. |
-| Headings | **Playfair Display** or **Cormorant Garamond** | Didone for impact; Cormorant for softer subheads. |
-| Body / UI | **Montserrat** or **Inter** (sans-serif) | Clean, modern, highly readable; spaced caps for descriptors. |
-
-- Headings: light/regular weight, generous line-height, never crowded.
-- Body: 16–18px base, comfortable line-height (1.6–1.7).
-- Both available free via Google Fonts.
+### Color Application Rules
+- Sage is the **hero color** — used for the homepage hero, section dividers, and the primary logo background
+- Cream is the **resting color** — most of the site lives here
+- Never use sage and terracotta together — sage is the one accent
+- Medical sections lean cooler (more cream, less sage warmth) to signal clinical precision
 
 ---
 
-## Visual Language
+## Typography ✓ UPDATED
 
-- **Whitespace is a feature** — let the design breathe.
-- Soft, rounded corners (4–8px); subtle shadows only.
-- Photography: bright, airy, neutral-toned; real organized spaces.
-- Minimal, refined micro-animations (gentle fades, slow reveals).
-- Two visual tones within one system:
-  - *Residential* → warm, soft, homey
-  - *Medical* → same palette, slightly cooler/cleaner (lean on Sage Whisper), conveying precision and compliance.
+| Role | Font | Weight | Notes |
+|---|---|---|---|
+| **Logo** | Geometric sans-serif | ExtraBold / Black | Futura PT Heavy, Brandon Grotesque Black, or Montserrat Black. The O must be circular. |
+| **Headings** | **Playfair Display** (serif) | 400–500 | Retained for editorial contrast against the geometric logo |
+| **Subheadings** | **Montserrat** | 300–400 | Clean, wide-spaced |
+| **Body** | **Montserrat** | 300 | Comfortable, airy, readable |
+| **Descriptors / Labels** | **Montserrat** | 300 | Wide letter-spacing (8–12px), uppercase |
+
+**Pairing logic:** The geometric logo + serif headings creates an elegant tension — modern precision meets warmth. This is the same system used by premium wellness and lifestyle brands.
+
+---
+
+## Visual Language ✓ UPDATED
+
+- **Silk sage green** as the hero texture — the flowing silk fabric from the logo is the visual language of the site
+- **Whitespace is a feature** — generous padding, nothing crowded
+- **Photography:** Bright, airy organized spaces with warm neutrals; sage green botanicals or fabric as lifestyle texture
+- **Micro-animations:** Gentle fades, slow vertical reveals — nothing abrupt
+- **Rounded corners:** 4–6px — soft but structured
+- **Two tones within one system:**
+  - *Residential* → sage warmth, cream surfaces, softness
+  - *Medical* → cream-dominant, sage as a refined accent only, cooler and more precise
 
 ---
 
 ## Tagline
 
-Status: **Deferred** ("maybe later"). Candidate directions to revisit:
+Status: **Deferred** — revisit after website is built.
+
+Candidates:
 - *"Space for What Matters"*
 - *"Order, Beautifully Done"*
 - *"Where Order Meets Calm"*
@@ -86,7 +98,9 @@ Status: **Deferred** ("maybe later"). Candidate directions to revisit:
 
 ---
 
-## Design & Component References
+## References
 
-- **Inspiration:** https://dribbble.com/ (Web Design + UX/UI, luxury minimalist)
-- **Components:** https://21st.dev/community/components (heroes, cards, testimonials, forms, CTAs)
+- **Logo source:** Client-created (FILE_5324.pdf, Page 3) ✓
+- **Market research:** `brand/MARKET-RESEARCH.md`
+- **Design inspiration:** https://dribbble.com/
+- **UI components:** https://21st.dev/community/components

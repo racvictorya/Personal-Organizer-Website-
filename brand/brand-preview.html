@@ -3,117 +3,194 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Structured Living — Brand Preview (Editorial Refinement)</title>
+<title>ORDÖ — Brand Preview (Locked)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Cormorant+Garamond:wght@400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --cream:#EFE9DD; --linen:#FBF8F3; --charcoal:#2E2A26;
-    --taupe:#A89A86; --clay:#B0654A; --espresso:#5A4F45; --sage:#C4C7B8; --muted:#7A6E60;
+    --sage:#8B9E7A; --sage-dark:#6B7D5C; --sage-pale:#C8D4BD;
+    --cream:#F5EFE0; --linen:#FBF8F3; --ivory:#F0E8D6;
+    --charcoal:#2E2A26; --taupe:#A89A86; --espresso:#5A4F45;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{
-    background:var(--cream);color:var(--charcoal);
-    font-family:'Montserrat',sans-serif;font-weight:300;padding:56px 24px;line-height:1.75;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.035 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  body{background:var(--cream);color:var(--charcoal);font-family:'Montserrat',sans-serif;font-weight:300;padding:0}
+
+  /* HERO — sage silk */
+  .hero{
+    background:var(--sage);
+    background-image:
+      radial-gradient(ellipse at 20% 50%, rgba(107,125,92,0.6) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(139,158,122,0.4) 0%, transparent 50%),
+      radial-gradient(ellipse at 60% 80%, rgba(91,108,77,0.5) 0%, transparent 55%);
+    min-height:480px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    padding:60px 24px;text-align:center;
   }
-  .wrap{max-width:920px;margin:0 auto}
-  .eyebrow{text-align:center;letter-spacing:6px;text-transform:uppercase;font-size:11px;color:var(--taupe);margin-bottom:10px}
-  h1{font-family:'Playfair Display',serif;font-weight:500;font-size:46px;letter-spacing:2px;text-align:center}
-  .sub{text-align:center;letter-spacing:5px;text-transform:uppercase;font-size:11px;color:var(--taupe);margin:8px 0 56px}
-  h2{font-family:'Playfair Display',serif;font-weight:500;font-size:24px;margin:52px 0 18px;border-bottom:1px solid var(--taupe);padding-bottom:10px;letter-spacing:.5px}
-  .logo-card{background:var(--cream);border:1px solid #ddd3c2;border-radius:6px;padding:54px 40px;margin-bottom:22px;text-align:center}
-  .logo-card.dark{background:var(--charcoal)}
-  .pill{display:inline-block;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--taupe);margin-bottom:30px}
+  .logo-wordmark{
+    font-family:'Montserrat',sans-serif;font-weight:800;font-size:clamp(72px,12vw,120px);
+    letter-spacing:8px;color:var(--ivory);line-height:1;
+  }
+  .logo-rule{width:min(380px,60vw);height:1px;background:var(--ivory);opacity:.75;margin:18px auto 14px}
+  .logo-desc{font-weight:300;font-size:13px;letter-spacing:12px;text-transform:uppercase;color:var(--ivory);opacity:.85;padding-left:12px}
+  .hero-tag{font-size:10px;letter-spacing:5px;text-transform:uppercase;color:var(--ivory);opacity:.6;margin-bottom:32px}
 
-  /* Primary wordmark */
-  .wm-top{font-family:'Playfair Display',serif;font-weight:500;font-size:64px;letter-spacing:8px;color:var(--charcoal);line-height:1}
-  .rule{display:flex;align-items:center;justify-content:center;gap:14px;margin:14px 0 8px}
-  .rule span{width:80px;height:1px;background:var(--taupe)}
-  .rule i{width:5px;height:5px;border-radius:50%;background:var(--espresso);display:block}
-  .wm-bot{font-family:'Playfair Display',serif;font-weight:400;font-size:42px;letter-spacing:26px;color:var(--charcoal);padding-left:26px}
-  .descr{font-weight:300;font-size:11px;letter-spacing:11px;text-transform:uppercase;color:var(--muted);margin-top:22px}
+  /* sections */
+  .section{padding:56px 24px}
+  .wrap{max-width:1040px;margin:0 auto}
+  .sh{font-size:10px;letter-spacing:5px;text-transform:uppercase;color:var(--taupe);
+      text-align:center;margin-bottom:28px;padding-bottom:14px;border-bottom:1px solid #ddd3c0}
 
-  /* Monogram */
-  .mono-ring{width:120px;height:120px;border:1px solid var(--taupe);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 26px}
-  .mono-ring b{font-family:'Playfair Display',serif;font-weight:500;font-size:62px;color:var(--charcoal)}
-  .mono-name{font-family:'Playfair Display',serif;font-weight:500;font-size:34px;letter-spacing:5px}
-  .dark .mono-ring{border-color:var(--taupe)}
-  .dark .mono-ring b,.dark .mono-name{color:var(--cream)}
-  .dark .descr{color:var(--taupe)}
-
-  .swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:14px}
-  .sw{border-radius:8px;overflow:hidden;border:1px solid #ddd3c2;font-size:12px}
-  .sw .chip{height:74px}
+  /* palette */
+  .swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:14px}
+  .sw{border-radius:6px;overflow:hidden;border:1px solid #e0d5c0}
+  .sw .chip{height:80px}
   .sw .meta{padding:10px;background:var(--linen)}
   .sw b{display:block;font-weight:500;font-size:13px}
   .sw code{color:var(--taupe);font-size:11px}
-  .type-row{margin:16px 0}
+
+  /* logo versions */
+  .logo-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:640px){.logo-grid{grid-template-columns:1fr}}
+  .logo-card{border-radius:6px;padding:48px 24px;text-align:center;border:1px solid #ddd3c0}
+  .logo-card.sage-bg{background:var(--sage);background-image:radial-gradient(ellipse at 30% 60%,rgba(107,125,92,.5) 0%,transparent 60%)}
+  .logo-card.cream-bg{background:var(--cream)}
+  .wm{font-family:'Montserrat',sans-serif;font-weight:800;font-size:clamp(48px,8vw,80px);letter-spacing:6px;line-height:1}
+  .wm.light{color:var(--ivory)}
+  .wm.dark{color:var(--charcoal)}
+  .lrule{width:200px;height:1px;margin:14px auto 12px}
+  .lrule.light{background:var(--ivory);opacity:.75}
+  .lrule.dark{background:var(--charcoal);opacity:.4}
+  .ldesc{font-size:11px;letter-spacing:9px;text-transform:uppercase}
+  .ldesc.light{color:var(--ivory);opacity:.8}
+  .ldesc.dark{color:var(--charcoal);opacity:.6}
+
+  /* type */
+  .type-row{margin:16px 0;padding:16px 0;border-bottom:1px solid #e8dfd0}
+  .type-row:last-child{border-bottom:none}
   .pf{font-family:'Playfair Display',serif}
-  .note{text-align:center;color:var(--taupe);font-size:12px;margin-top:52px;letter-spacing:1px}
+
+  /* favicon */
+  .fav-row{display:flex;gap:16px;align-items:flex-end;justify-content:center;flex-wrap:wrap;padding:24px 0}
+  .fav-box{text-align:center}
+  .fav-box span{display:block;font-size:10px;color:var(--taupe);margin-top:6px;letter-spacing:1px}
+  .fbox{border-radius:10px;background:var(--sage);display:flex;align-items:center;justify-content:center}
+  .fbox .fw{font-family:'Montserrat',sans-serif;font-weight:800;color:var(--ivory);letter-spacing:1px}
+
+  .locked{display:inline-block;background:var(--sage-dark);color:var(--ivory);
+    font-size:9px;letter-spacing:3px;text-transform:uppercase;padding:3px 10px;border-radius:2px;margin-bottom:20px}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="eyebrow">Refined · Editorial Direction</div>
-  <h1>Structured Living</h1>
-  <div class="sub">Brand Preview · Phase 0 · v2</div>
 
-  <h2>Primary Logo · Editorial Wordmark</h2>
-  <div class="logo-card">
-    <span class="pill">Primary</span>
-    <div class="wm-top">STRUCTURED</div>
-    <div class="rule"><span></span><i></i><span></span></div>
-    <div class="wm-bot">LIVING</div>
-    <div class="descr">Professional Organizing</div>
-  </div>
-
-  <h2>Compact Mark · SL Monogram</h2>
-  <div class="logo-card">
-    <span class="pill">Monogram</span>
-    <div class="mono-ring"><b>SL</b></div>
-    <div class="mono-name">Structured Living</div>
-    <div class="descr">Professional Organizing</div>
-  </div>
-
-  <div class="logo-card dark">
-    <span class="pill">Reversed · on charcoal</span>
-    <div class="mono-ring"><b>SL</b></div>
-    <div class="mono-name">Structured Living</div>
-    <div class="descr">Professional Organizing</div>
-  </div>
-
-  <h2>Color Palette · Warm Neutral Core</h2>
-  <div class="swatches">
-    <div class="sw"><div class="chip" style="background:#EFE9DD"></div><div class="meta"><b>Linen Cream</b><code>#EFE9DD</code></div></div>
-    <div class="sw"><div class="chip" style="background:#FBF8F3"></div><div class="meta"><b>Soft Linen</b><code>#FBF8F3</code></div></div>
-    <div class="sw"><div class="chip" style="background:#2E2A26"></div><div class="meta"><b>Charcoal</b><code>#2E2A26</code></div></div>
-    <div class="sw"><div class="chip" style="background:#A89A86"></div><div class="meta"><b>Warm Taupe</b><code>#A89A86</code></div></div>
-    <div class="sw"><div class="chip" style="background:#5A4F45"></div><div class="meta"><b>Espresso</b><code>#5A4F45</code></div></div>
-    <div class="sw"><div class="chip" style="background:#C4C7B8"></div><div class="meta"><b>Sage Whisper</b><code>#C4C7B8</code></div></div>
-  </div>
-
-  <h2>Optional Accent · Not Selected Yet</h2>
-  <p style="font-size:14px;color:var(--espresso);margin-bottom:16px">The core is a refined warm-neutral monochrome. A single accent <em>may</em> be added later — here are candidates to react to. None chosen yet.</p>
-  <div class="swatches">
-    <div class="sw"><div class="chip" style="background:#B0654A"></div><div class="meta"><b>Clay / Terracotta</b><code>#B0654A</code></div></div>
-    <div class="sw"><div class="chip" style="background:#8A9A7B"></div><div class="meta"><b>Muted Sage</b><code>#8A9A7B</code></div></div>
-    <div class="sw"><div class="chip" style="background:#B89B5E"></div><div class="meta"><b>Antique Gold</b><code>#B89B5E</code></div></div>
-    <div class="sw"><div class="chip" style="background:#C9A29A"></div><div class="meta"><b>Dusty Rose</b><code>#C9A29A</code></div></div>
-  </div>
-
-  <h2>Typography</h2>
-  <div class="type-row">
-    <div class="pf" style="font-size:42px;font-weight:500">Playfair Display — Logo &amp; Display</div>
-    <div class="pf" style="font-size:18px;color:var(--espresso)">High-contrast editorial Didone serif — the Aurora / SOIL energy.</div>
-  </div>
-  <div class="type-row">
-    <div style="font-size:22px;font-weight:400">Montserrat — Body &amp; UI</div>
-    <div style="font-size:15px;color:var(--espresso)">Clean modern sans-serif; spaced caps for descriptors &amp; navigation.</div>
-  </div>
-
-  <div class="note">Drafts for client review · refine via AI tools and replace files in /brand/logo/</div>
+<!-- HERO: primary logo on sage -->
+<div class="hero">
+  <div class="hero-tag">ORDÖ · Brand Identity · Locked</div>
+  <div class="logo-wordmark">ORDÖ</div>
+  <div class="logo-rule"></div>
+  <div class="logo-desc">Personal Organizer</div>
 </div>
+
+<!-- LOGO VERSIONS -->
+<div class="section" style="background:var(--linen)">
+  <div class="wrap">
+    <div class="sh">Logo Versions</div>
+    <div class="logo-grid">
+
+      <div class="logo-card sage-bg">
+        <div class="locked">Primary</div>
+        <div class="wm light">ORDÖ</div>
+        <div class="lrule light"></div>
+        <div class="ldesc light">Personal Organizer</div>
+      </div>
+
+      <div class="logo-card cream-bg">
+        <div class="locked" style="background:var(--espresso)">Light Version</div>
+        <div class="wm dark">ORDÖ</div>
+        <div class="lrule dark"></div>
+        <div class="ldesc dark">Personal Organizer</div>
+      </div>
+
+    </div>
+
+    <!-- Favicons -->
+    <div class="sh" style="margin-top:40px">Favicon &amp; Avatar Mark</div>
+    <div class="fav-row">
+      <div class="fav-box">
+        <div class="fbox" style="width:64px;height:64px">
+          <div class="fw" style="font-size:22px">OÖ</div>
+        </div>
+        <span>64px</span>
+      </div>
+      <div class="fav-box">
+        <div class="fbox" style="width:48px;height:48px">
+          <div class="fw" style="font-size:16px">OÖ</div>
+        </div>
+        <span>48px</span>
+      </div>
+      <div class="fav-box">
+        <div class="fbox" style="width:32px;height:32px;border-radius:6px">
+          <div class="fw" style="font-size:11px">OÖ</div>
+        </div>
+        <span>32px</span>
+      </div>
+      <div class="fav-box">
+        <div class="fbox" style="width:80px;height:80px;border-radius:50%">
+          <div class="fw" style="font-size:26px">OÖ</div>
+        </div>
+        <span>Avatar</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PALETTE -->
+<div class="section">
+  <div class="wrap">
+    <div class="sh">Color Palette</div>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#8B9E7A"></div><div class="meta"><b>Silk Sage</b><code>#8B9E7A</code><div style="font-size:10px;color:#A89A86;margin-top:2px">Primary brand</div></div></div>
+      <div class="sw"><div class="chip" style="background:#6B7D5C"></div><div class="meta"><b>Deep Sage</b><code>#6B7D5C</code><div style="font-size:10px;color:#A89A86;margin-top:2px">Hover / footer</div></div></div>
+      <div class="sw"><div class="chip" style="background:#C8D4BD"></div><div class="meta"><b>Pale Sage</b><code>#C8D4BD</code><div style="font-size:10px;color:#A89A86;margin-top:2px">Tints / BG alt</div></div></div>
+      <div class="sw"><div class="chip" style="background:#F5EFE0"></div><div class="meta"><b>Warm Cream</b><code>#F5EFE0</code><div style="font-size:10px;color:#A89A86;margin-top:2px">Page BG</div></div></div>
+      <div class="sw"><div class="chip" style="background:#FBF8F3"></div><div class="meta"><b>Soft Linen</b><code>#FBF8F3</code><div style="font-size:10px;color:#A89A86;margin-top:2px">Cards / panels</div></div></div>
+      <div class="sw"><div class="chip" style="background:#F0E8D6"></div><div class="meta"><b>Ivory</b><code>#F0E8D6</code><div style="font-size:10px;color:#A89A86;margin-top:2px">Logo on sage</div></div></div>
+      <div class="sw"><div class="chip" style="background:#2E2A26"></div><div class="meta"><b>Charcoal</b><code>#2E2A26</code><div style="font-size:10px;color:#A89A86;margin-top:2px">Primary text</div></div></div>
+      <div class="sw"><div class="chip" style="background:#A89A86"></div><div class="meta"><b>Warm Taupe</b><code>#A89A86</code><div style="font-size:10px;color:#A89A86;margin-top:2px">Rules / accents</div></div></div>
+      <div class="sw"><div class="chip" style="background:#5A4F45"></div><div class="meta"><b>Espresso</b><code>#5A4F45</code><div style="font-size:10px;color:#A89A86;margin-top:2px">CTAs / buttons</div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPOGRAPHY -->
+<div class="section" style="background:var(--linen)">
+  <div class="wrap">
+    <div class="sh">Typography</div>
+    <div class="type-row">
+      <div style="font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--taupe);margin-bottom:8px">Logo</div>
+      <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:52px;letter-spacing:5px;color:var(--charcoal)">ORDÖ</div>
+      <div style="font-size:12px;color:var(--taupe);margin-top:6px">Montserrat Black · geometric, circular O · diamond diaeresis on Ö</div>
+    </div>
+    <div class="type-row">
+      <div style="font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--taupe);margin-bottom:8px">Headings</div>
+      <div class="pf" style="font-size:38px;font-weight:400;color:var(--charcoal)">Every space has a life it deserves to live.</div>
+      <div style="font-size:12px;color:var(--taupe);margin-top:6px">Playfair Display Regular · editorial warmth</div>
+    </div>
+    <div class="type-row">
+      <div style="font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--taupe);margin-bottom:8px">Body</div>
+      <div style="font-size:17px;line-height:1.75;color:var(--espresso);max-width:540px">We create spaces that are calm, functional, and built to last — for homes, medical offices, and healthcare environments across New York, New Jersey, and beyond.</div>
+      <div style="font-size:12px;color:var(--taupe);margin-top:6px">Montserrat Light 300 · 17px · line-height 1.75</div>
+    </div>
+    <div class="type-row">
+      <div style="font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--taupe);margin-bottom:8px">Labels / Descriptors</div>
+      <div style="font-size:11px;letter-spacing:10px;text-transform:uppercase;color:var(--taupe)">Personal Organizer &nbsp;·&nbsp; New York &amp; New Jersey</div>
+      <div style="font-size:12px;color:var(--taupe);margin-top:6px">Montserrat Light · wide letter-spacing · uppercase only</div>
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center;padding:28px;font-size:11px;letter-spacing:2px;color:var(--taupe);background:var(--sage);color:var(--ivory);opacity:.8">
+  ORDÖ · Brand Identity Locked · Phase 0 Complete
+</div>
+
 </body>
 </html>

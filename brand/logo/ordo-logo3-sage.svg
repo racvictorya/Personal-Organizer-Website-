@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="ORDÖ Personal Organizer">
+  <title>ORDÖ — Personal Organizer (Primary: cream on sage)</title>
+
+  <!-- Sage silk background -->
+  <rect width="800" height="800" fill="#8B9E7A"/>
+
+  <!-- ORDÖ wordmark — geometric sans, cream -->
+  <text x="400" y="420"
+        font-family="'Futura PT','Brandon Grotesque','Montserrat',Helvetica,Arial,sans-serif"
+        font-size="148" font-weight="800"
+        letter-spacing="8"
+        text-anchor="middle"
+        fill="#F0E8D6">ORDÖ</text>
+
+  <!-- Thin horizontal rule -->
+  <line x1="192" y1="464" x2="608" y2="464"
+        stroke="#F0E8D6" stroke-width="1.5" opacity="0.85"/>
+
+  <!-- PERSONAL ORGANIZER descriptor -->
+  <text x="400" y="502"
+        font-family="'Montserrat','Futura PT',Helvetica,Arial,sans-serif"
+        font-size="22" font-weight="300"
+        letter-spacing="13"
+        text-anchor="middle"
+        fill="#F0E8D6" opacity="0.9">PERSONAL ORGANIZER</text>
+</svg>
