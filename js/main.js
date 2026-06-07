@@ -154,28 +154,55 @@
   });
 
 
-  // ── Contact form ──────────────────────────────
+  // ── Contact form (Formspree) ──────────────────
+  //
+  // Setup (one time, free):
+  //   1. Go to https://formspree.io and create a free account
+  //   2. Click "New Form" — name it "ORDÖ Contact"
+  //   3. Copy the form ID (looks like: xeojpwkj)
+  //   4. Replace YOUR_FORM_ID below AND in contact.html form action
 
-  const form        = document.getElementById('contact-form');
-  const formSuccess = document.getElementById('form-success');
+  var FORMSPREE_ID = 'YOUR_FORM_ID';
+
+  var form        = document.getElementById('contact-form');
+  var formSuccess = document.getElementById('form-success');
 
   if (form) {
-    form.addEventListener('submit', function (e) {
+    form.addEventListener('submit', async function (e) {
       e.preventDefault();
 
       if (!validateForm(form)) return;
 
-      // Disable submit while "sending"
-      const submitBtn = form.querySelector('[type="submit"]');
-      const original  = submitBtn.textContent;
+      var submitBtn = form.querySelector('[type="submit"]');
       submitBtn.textContent = 'Sending…';
       submitBtn.disabled = true;
 
-      // Simulate submission (replace with real endpoint)
-      setTimeout(function () {
-        form.style.display = 'none';
-        if (formSuccess) formSuccess.classList.add('visible');
-      }, 800);
+      var data = {};
+      new FormData(form).forEach(function (value, key) {
+        data[key] = value;
+      });
+
+      try {
+        var res = await fetch('https://formspree.io/f/' + FORMSPREE_ID, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(data)
+        });
+
+        if (res.ok) {
+          form.style.display = 'none';
+          if (formSuccess) formSuccess.classList.add('visible');
+        } else {
+          submitBtn.textContent = 'Try again';
+          submitBtn.disabled = false;
+        }
+      } catch (err) {
+        submitBtn.textContent = 'Try again';
+        submitBtn.disabled = false;
+      }
     });
   }
 

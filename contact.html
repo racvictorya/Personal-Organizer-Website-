@@ -122,7 +122,10 @@
 
           <!-- Form -->
           <div class="fade-up">
-            <form class="form" id="contact-form" novalidate aria-label="Book a consultation form">
+            <form class="form" id="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID" novalidate aria-label="Book a consultation form">
+              <!-- Formspree config: replace YOUR_FORM_ID with your ID from formspree.io -->
+              <input type="hidden" name="_subject" value="New Inquiry — ORDÖ">
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
               <div class="form-row">
                 <div class="form-group">
                   <label for="first-name">First Name <span aria-label="required">*</span></label>
