@@ -20,10 +20,12 @@ Design DNA extracted from client-created logo (Page 3 of FILE_5324.pdf):
 5. **Light application:** Charcoal wordmark on warm cream background (for print, white backgrounds)
 6. **No swash. No serif. No calligraphic elements.** Clean, modern, precise.
 
-### Logo Files
-- `brand/logo/ordo-logo3-sage.svg` — Primary: cream on sage green
-- `brand/logo/ordo-logo3-light.svg` — Light: charcoal on cream
-- `brand/logo/ordo-favicon.svg` — Favicon: ORDÖ compact on sage square
+### Logo Files — ORIGINALS (do not modify)
+- `brand/logo/originals/logo-3-geometric-sage.jpg` — **PRIMARY logo** (selected): cream on sage green silk
+- `brand/logo/originals/logo-2-geometric-linen.jpg` — Logo 2: white on linen texture
+- `brand/logo/originals/logo-1-serif-swash.jpg` — Logo 1: serif + calligraphic swash on blush cream
+
+These are the client's original logos. They must be used as-is in all website assets. No recreation, no modification.
 
 ### Logo Usage Rules
 - Maintain generous clear space (minimum = cap height of the O on all sides)
