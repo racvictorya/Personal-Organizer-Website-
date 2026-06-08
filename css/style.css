@@ -115,14 +115,22 @@ section { padding: var(--section-py) 0; }
   justify-content: space-between;
 }
 .nav-logo {
-  height: 48px;
-  width: auto;
-  max-width: 148px;
-  border-radius: 6px;
-  overflow: hidden;
   flex-shrink: 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
-.nav-logo img { height: 100%; width: auto; display: block; object-fit: contain; }
+.nav-wordmark {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 21px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  transition: color .25s;
+  text-indent: 7px;
+}
+.nav-hero:not(.scrolled) .nav-wordmark { color: var(--ivory); }
 .nav-links {
   display: flex;
   align-items: center;
@@ -202,11 +210,37 @@ section { padding: var(--section-py) 0; }
   pointer-events: none;
 }
 .hero-inner { position: relative; max-width: 800px; }
-.hero-logo {
-  width: clamp(160px, 30vw, 260px);
-  border-radius: var(--radius-lg);
-  margin: 0 auto 44px;
-  box-shadow: 0 8px 48px rgba(46,42,38,.2);
+
+/* Hero brand lockup */
+.hero-lockup {
+  margin: 0 auto 52px;
+  text-align: center;
+}
+.hero-wordmark-display {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: clamp(72px, 13vw, 128px);
+  letter-spacing: 14px;
+  text-indent: 14px;
+  color: var(--ivory);
+  line-height: 1;
+}
+.hero-lockup-rule {
+  width: min(360px, 58vw);
+  height: 1px;
+  background: var(--ivory);
+  opacity: .55;
+  margin: 20px auto 16px;
+}
+.hero-lockup-desc {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 11px;
+  text-indent: 11px;
+  text-transform: uppercase;
+  color: var(--ivory);
+  opacity: .75;
 }
 .hero h1 {
   color: var(--ivory);
@@ -743,14 +777,30 @@ footer {
   margin-bottom: 56px;
 }
 .footer-logo {
-  height: 60px;
-  width: auto;
-  max-width: 180px;
-  border-radius: 6px;
-  overflow: hidden;
+  margin-bottom: 8px;
+}
+.footer-wordmark {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 32px;
+  letter-spacing: 8px;
+  text-indent: 8px;
+  text-transform: uppercase;
+  color: var(--ivory);
+  opacity: .9;
+  display: block;
+  margin-bottom: 6px;
+}
+.footer-descriptor {
+  font-size: 9px;
+  font-weight: 300;
+  letter-spacing: 6px;
+  text-indent: 6px;
+  text-transform: uppercase;
+  color: rgba(240,232,214,.4);
+  display: block;
   margin-bottom: 20px;
 }
-.footer-logo img { height: 100%; width: auto; display: block; object-fit: contain; }
 .footer-tagline {
   font-size: 14px;
   color: rgba(240,232,214,.6);
