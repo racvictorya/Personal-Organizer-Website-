@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ordo.co/sitemap.xml
+Sitemap: https://byordo.com/sitemap.xml
