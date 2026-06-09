@@ -207,7 +207,7 @@ section { padding: var(--section-py) 0; }
   pointer-events: none;
 }
 
-/* ── Logo rectangle — reveals outward from center on load ── */
+/* ── Logo rectangle ── */
 .hero-logo-wrap {
   width: 100%;
   max-width: 920px;
@@ -217,20 +217,9 @@ section { padding: var(--section-py) 0; }
   overflow: hidden;
   position: relative;
   box-shadow: 0 14px 60px rgba(46,42,38,.14), 0 2px 12px rgba(46,42,38,.08);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--sage);
-  /* clip-path opens outward from center — left & right pulled apart */
-  clip-path: inset(0 48%);
-  animation: logo-open 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-@keyframes logo-open {
-  0%   { clip-path: inset(0 48%); }
-  100% { clip-path: inset(0 0%);  border-radius: 4px; }
 }
 
-/* Logo texture — always exactly the original JPG, no distortion */
+/* The original logo — exactly as provided */
 .hero-logo-wrap::before {
   content: '';
   position: absolute;
@@ -238,22 +227,29 @@ section { padding: var(--section-py) 0; }
   background: url('../assets/logo-primary.jpg') center center / cover no-repeat;
 }
 
-/* No ::after animations — the reveal IS the moment */
+/* Grain flow — follows the diagonal direction already in the silk texture.
+   Barely-visible repeating diagonal lines drift slowly along the grain,
+   giving the fabric a living, flowing quality without disturbing the logo. */
+.hero-logo-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -52deg,
+    transparent         0px,
+    transparent         18px,
+    rgba(255,255,255,.055) 18px,
+    rgba(255,255,255,.055) 19px
+  );
+  background-size: 200% 200%;
+  animation: grain-flow 9s linear infinite;
+}
+@keyframes grain-flow {
+  0%   { background-position: 0% 0%;     }
+  100% { background-position: 100% 100%; }
+}
 
-/* ORDÖ lockup — fades in after rectangle is fully open */
-.hero-logo-lockup {
-  position: relative;
-  z-index: 10;
-  text-align: center;
-  pointer-events: none;
-  opacity: 0;
-  animation: text-appear 0.8s ease forwards;
-  animation-delay: 1.6s;
-}
-@keyframes text-appear {
-  0%   { opacity: 0; transform: translateY(6px); }
-  100% { opacity: 1; transform: translateY(0);   }
-}
+/* unused — kept for nav/footer references */
 .hero-wordmark-display {
   font-family: var(--font-body);
   font-weight: 800;
