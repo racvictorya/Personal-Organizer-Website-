@@ -219,20 +219,21 @@ section { padding: var(--section-py) 0; }
   box-shadow: 0 14px 60px rgba(46,42,38,.14), 0 2px 12px rgba(46,42,38,.08);
 }
 
-/* Texture layer — scales outward from center behind ORDÖ, then pulls back */
+/* Texture layer — expands along silk's natural diagonal grain, then pulls back */
 .hero-logo-wrap::before {
   content: '';
   position: absolute;
   inset: 0;
   background: url('../assets/logo-texture.jpg') center center / cover no-repeat;
   transform-origin: center center;
-  animation: texture-breathe 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation: texture-breathe 6s cubic-bezier(0.45, 0, 0.25, 1) infinite;
 }
 @keyframes texture-breathe {
-  0%        { transform: scale(1.0); }
-  42%       { transform: scale(1.18); }
-  58%       { transform: scale(1.18); }
-  100%      { transform: scale(1.0); }
+  /* Silk grain runs upper-left → lower-right; expansion follows that axis */
+  0%   { transform: scale(1.0)  translate(0,    0);   }
+  45%  { transform: scale(1.15) translate(-2.5%, -1.8%); }
+  55%  { transform: scale(1.15) translate(-2.5%, -1.8%); }
+  100% { transform: scale(1.0)  translate(0,    0);   }
 }
 
 /* ORDÖ lockup — static, on top, matches original logo typography */
