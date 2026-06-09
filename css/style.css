@@ -219,19 +219,50 @@ section { padding: var(--section-py) 0; }
   box-shadow: 0 14px 60px rgba(46,42,38,.14), 0 2px 12px rgba(46,42,38,.08);
 }
 
-/* Logo image — oversized so there's room to drift without showing edges.
-   Animates slowly along the silk's natural diagonal grain direction.
-   The whole fabric moves — texture and ORDÖ together, like real silk. */
+/* Texture layer — text area blurred out so only silk moves */
 .hero-logo-wrap::before {
   content: '';
   position: absolute;
   inset: -18%;
-  background: url('../assets/logo-primary.jpg') center center / cover no-repeat;
+  background: url('../assets/logo-texture.jpg') center center / cover no-repeat;
   animation: silk-drift 18s ease-in-out infinite alternate;
 }
 @keyframes silk-drift {
-  0%   { transform: translate(0%,    0%);   }
-  100% { transform: translate(-10%,  -7%);  }
+  0%   { transform: translate(0%,   0%);  }
+  100% { transform: translate(-10%, -7%); }
+}
+
+/* ORDÖ lockup — static, on top, matches original logo typography */
+.hero-logo-lockup {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  pointer-events: none;
+}
+.hero-wordmark-display {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: clamp(64px, 11vw, 118px);
+  letter-spacing: 16px;
+  text-indent: 16px;
+  color: var(--ivory);
+  line-height: 1;
+  text-shadow: 0 1px 20px rgba(30,44,22,.28);
+}
+.hero-lockup-rule {
+  width: min(320px, 54vw);
+  height: 1px;
+  background: rgba(240,232,214,.50);
+  margin: 16px auto 12px;
+}
+.hero-lockup-desc {
+  display: block;
+  font-size: 9.5px;
+  font-weight: 300;
+  letter-spacing: 9px;
+  text-indent: 9px;
+  text-transform: uppercase;
+  color: rgba(240,232,214,.70);
 }
 
 /* unused — kept for nav/footer references */
