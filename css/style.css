@@ -219,34 +219,19 @@ section { padding: var(--section-py) 0; }
   box-shadow: 0 14px 60px rgba(46,42,38,.14), 0 2px 12px rgba(46,42,38,.08);
 }
 
-/* The original logo — exactly as provided */
+/* Logo image — oversized so there's room to drift without showing edges.
+   Animates slowly along the silk's natural diagonal grain direction.
+   The whole fabric moves — texture and ORDÖ together, like real silk. */
 .hero-logo-wrap::before {
   content: '';
   position: absolute;
-  inset: 0;
+  inset: -18%;
   background: url('../assets/logo-primary.jpg') center center / cover no-repeat;
+  animation: silk-drift 18s ease-in-out infinite alternate;
 }
-
-/* Grain flow — follows the diagonal direction already in the silk texture.
-   Barely-visible repeating diagonal lines drift slowly along the grain,
-   giving the fabric a living, flowing quality without disturbing the logo. */
-.hero-logo-wrap::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    -52deg,
-    transparent         0px,
-    transparent         18px,
-    rgba(255,255,255,.055) 18px,
-    rgba(255,255,255,.055) 19px
-  );
-  background-size: 200% 200%;
-  animation: grain-flow 9s linear infinite;
-}
-@keyframes grain-flow {
-  0%   { background-position: 0% 0%;     }
-  100% { background-position: 100% 100%; }
+@keyframes silk-drift {
+  0%   { transform: translate(0%,    0%);   }
+  100% { transform: translate(-10%,  -7%);  }
 }
 
 /* unused — kept for nav/footer references */
