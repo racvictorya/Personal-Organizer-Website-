@@ -5,11 +5,11 @@
 - Gym: LA Fitness
 - Goal: lean mass gain + toning
 - Frequency: 4-5 days/week
-- Program: 3-day glute/leg-priority split (see Current schedule), currently Week 1 (re-entry), starting Tue Oct 13, 2026
+- Program: 4-day glute/leg-priority split (see Current schedule), currently Week 1 (re-entry), starting Tue Oct 13, 2026
 - Age: born 1995 (30-31 in 2026)
 - Experience: on-and-off lifting since age 23 (~2018), typically 2-3 months a year, irregularly, then stopping. Familiar with the gym but no long consistent training block yet. Main focus now is consistency past the 3-month mark.
 - Injuries: lower back, early-stage herniated disc. Doctor ran tests and cleared training, with the advice to start lighter.
-- Available days: Tuesday and Thursday mornings (must be done by 8am), Friday after 4pm. Asked about a possible 4th day.
+- Available days: Tuesday and Thursday mornings (must be done by 8am), Friday after 4pm, Saturday, Sunday.
 - Machine familiarity: comfortable with most lower-body machines; less experience with upper-body machines and free weights, so start upper body on machines and teach form.
 
 ## Back-friendly program changes (early disc herniation)
@@ -41,7 +41,8 @@ Follow the doctor's guidance first. Stop and check with the doctor if there is p
 - Implies gradual weight gain over time (roughly +6-12 lb in year one), mostly muscle.
 - Back caution on glute work: ribs down and tuck pelvis slightly at lockout on hip thrusts; don't arch the lower back to finish the rep.
 
-## Current schedule (3 days; replaces the 4-day split until a 4th day is available)
+## Current schedule (4 days: Tue, Thu, Sat, Sun; Friday = backup/make-up day)
+Friday is for making up a missed session, not a 5th day yet. From week 5, if recovery and the back feel good, Friday can become a short extra glute day.
 Week 1-2: 2-3 working sets, RPE 6-7. Warm-up: 5 min bike or incline walk, then 1-2 light sets of the first lift.
 **Tuesday AM, Lower A (glutes), ~50 min**
 - Hip thrust (machine or barbell with pad) 3x10-12
@@ -58,7 +59,7 @@ Week 1-2: 2-3 working sets, RPE 6-7. Warm-up: 5 min bike or incline walk, then 1
 - Face pull 2x12-15
 - Cable curl + rope pushdown, back to back 2x12-15 each
 - Pallof press 2x10 each side
-**Friday PM, Lower B (glutes + thighs), ~60-70 min**
+**Saturday, Lower B (glutes + thighs), ~60-70 min**
 - Hip thrust 3x8-12
 - Hack squat (or goblet squat) 3x10-12
 - Bulgarian split squat, bodyweight or light dumbbells 2x8-10 each leg
@@ -69,7 +70,17 @@ Week 1-2: 2-3 working sets, RPE 6-7. Warm-up: 5 min bike or incline walk, then 1
 - Seated calf raise 2x12-15
 - Bird dog 2x8 each side
 - Optional: 10-15 min incline walk
-If a 4th day opens up: shoulders/arms/glute pump day (lateral raise, rear-delt fly, curls, triceps, kickback, abduction).
+**Sunday, Upper B + glute pump, ~50-60 min**
+- Assisted pull-up machine (or close-grip lat pulldown) 2x8-10
+- One-arm dumbbell row, hand and knee on bench 2x10-12
+- Incline machine or dumbbell press 2x10-12
+- Cable lateral raise 3x12-15
+- Rear-delt fly machine 2x12-15
+- Dumbbell curl 2x10-12
+- Overhead cable triceps extension 2x12-15
+- Cable kickback 2x12-15 each leg (light)
+- Abduction machine 2x15-20 (light)
+- Optional: 10-15 min incline walk
 
 ## Weekly average body weight
 | Week | Avg weight (lb) | Notes |
