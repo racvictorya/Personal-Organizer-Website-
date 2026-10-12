@@ -5,11 +5,12 @@
 - Gym: LA Fitness
 - Goal: lean mass gain + toning
 - Frequency: 4-5 days/week
-- Program: Upper/Lower 4-day (+ optional pump day), currently Week 1 (re-entry)
+- Program: 3-day glute/leg-priority split (see Current schedule), currently Week 1 (re-entry), starting Tue Oct 13, 2026
 - Age: born 1995 (30-31 in 2026)
 - Experience: on-and-off lifting since age 23 (~2018), typically 2-3 months a year, irregularly, then stopping. Familiar with the gym but no long consistent training block yet. Main focus now is consistency past the 3-month mark.
 - Injuries: lower back, early-stage herniated disc. Doctor ran tests and cleared training, with the advice to start lighter.
-- Preferred training days: _to fill in_
+- Available days: Tuesday and Thursday mornings (must be done by 8am), Friday after 4pm. Asked about a possible 4th day.
+- Machine familiarity: comfortable with most lower-body machines; less experience with upper-body machines and free weights, so start upper body on machines and teach form.
 
 ## Back-friendly program changes (early disc herniation)
 Follow the doctor's guidance first. Stop and check with the doctor if there is pain shooting down a leg, numbness/tingling, or back pain that gets worse during or after a lift.
@@ -39,6 +40,36 @@ Follow the doctor's guidance first. Stop and check with the doctor if there is p
 - Realistic timeline: noticeable change in 6-12 months, a look like the reference in 2-4+ years of consistent training. Reference photos are posed and lit for social media, so compare progress against own photos, not those.
 - Implies gradual weight gain over time (roughly +6-12 lb in year one), mostly muscle.
 - Back caution on glute work: ribs down and tuck pelvis slightly at lockout on hip thrusts; don't arch the lower back to finish the rep.
+
+## Current schedule (3 days; replaces the 4-day split until a 4th day is available)
+Week 1-2: 2-3 working sets, RPE 6-7. Warm-up: 5 min bike or incline walk, then 1-2 light sets of the first lift.
+**Tuesday AM, Lower A (glutes), ~50 min**
+- Hip thrust (machine or barbell with pad) 3x10-12
+- Leg press, feet high and wide 3x10-12
+- Seated leg curl 3x10-12
+- Abduction machine 2x15-20
+- Cable lateral raise 2x12-15
+- Dead bug 2x8 each side
+**Thursday AM, Upper, ~50 min**
+- Machine chest press 3x8-12
+- Lat pulldown 3x10-12
+- Chest-supported row machine 3x10-12
+- Machine shoulder press, back supported 2x10-12
+- Face pull 2x12-15
+- Cable curl + rope pushdown, back to back 2x12-15 each
+- Pallof press 2x10 each side
+**Friday PM, Lower B (glutes + thighs), ~60-70 min**
+- Hip thrust 3x8-12
+- Hack squat (or goblet squat) 3x10-12
+- Bulgarian split squat, bodyweight or light dumbbells 2x8-10 each leg
+- Lying leg curl 2x10-12 (light dumbbell RDL instead only if the back feels fine)
+- Abduction machine 3x15-20
+- Cable kickback 2x12-15 each leg
+- Cable lateral raise 2x12-15
+- Seated calf raise 2x12-15
+- Bird dog 2x8 each side
+- Optional: 10-15 min incline walk
+If a 4th day opens up: shoulders/arms/glute pump day (lateral raise, rear-delt fly, curls, triceps, kickback, abduction).
 
 ## Weekly average body weight
 | Week | Avg weight (lb) | Notes |
