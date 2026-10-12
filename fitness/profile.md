@@ -20,6 +20,19 @@ Follow the doctor's guidance first. Stop and check with the doctor if there is p
 - Avoid for now: heavy barbell back squat, conventional deadlift, good mornings, sit-ups/crunches, heavy loads carried overhead while standing.
 - Brace before each rep (ribs down, tight midsection); exhale on the effort.
 
+## Physique notes (from photos, Oct 2026; photos taken ~4-5 lb lighter, ~121-122 lb; photos not stored)
+- Lean, athletic base: visible midsection definition, small waist, glutes already have good shape.
+- Most room to grow: shoulders (side and rear delts), upper back/lats, arms, and hamstrings/upper thighs.
+- Posture: noticeable lower-back arch with the pelvis tipped forward in side view. Prioritize core anti-extension work and glute strength; worth mentioning to the doctor or a physical therapist given the disc.
+
+## Emphasis changes from photo review
+- Day 2 and Day 5: add face pull or rear-delt fly 3x12-15.
+- Day 2: cable lateral raise up to 3-4 sets; add lateral raises on Day 5 (2x12-15) for twice-weekly side delt work.
+- Day 4: add lying or seated leg curl 3x10-12 (hamstrings trained twice a week).
+- Optional 5th day: focus on shoulders, upper back, and glutes (lateral raise, rear-delt fly, straight-arm pulldown, hip thrust or cable kickback, abduction).
+- Keep glute work as is; it's a strength already, so no extra volume needed.
+- Every session: end with dead bug or Pallof press for core bracing.
+
 ## Weekly average body weight
 | Week | Avg weight (lb) | Notes |
 |------|-----------------|-------|
