@@ -6,7 +6,8 @@
 - Goal: lean mass gain + toning
 - Frequency: 4-5 days/week
 - Program: Upper/Lower 4-day (+ optional pump day), currently Week 1 (re-entry)
-- Experience: lifted before for about 2-3 months, then stopped. Main focus now is staying consistent.
+- Age: born 1995 (30-31 in 2026)
+- Experience: on-and-off lifting since age 23 (~2018), typically 2-3 months a year, irregularly, then stopping. Familiar with the gym but no long consistent training block yet. Main focus now is consistency past the 3-month mark.
 - Injuries: lower back, early-stage herniated disc. Doctor ran tests and cleared training, with the advice to start lighter.
 - Preferred training days: _to fill in_
 
