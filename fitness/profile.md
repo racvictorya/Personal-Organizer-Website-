@@ -31,8 +31,14 @@ Follow the doctor's guidance first. Stop and check with the doctor if there is p
 - Day 2: cable lateral raise up to 3-4 sets; add lateral raises on Day 5 (2x12-15) for twice-weekly side delt work.
 - Day 4: add lying or seated leg curl 3x10-12 (hamstrings trained twice a week).
 - Optional 5th day: focus on shoulders, upper back, and glutes (lateral raise, rear-delt fly, straight-arm pulldown, hip thrust or cable kickback, abduction).
-- Keep glute work as is; it's a strength already, so no extra volume needed.
+- Glutes and legs are now a priority (see goal look below): hip thrust twice a week, abduction 3x15-20 on both lower days, cable kickback on the optional day.
 - Every session: end with dead bug or Pallof press for core bracing.
+
+## Goal look (from reference photos, Oct 2026; photos not stored)
+- Fuller, rounder glutes and more muscular upper thighs (quads and hamstrings), rounded shoulders, defined arms, small waist.
+- Realistic timeline: noticeable change in 6-12 months, a look like the reference in 2-4+ years of consistent training. Reference photos are posed and lit for social media, so compare progress against own photos, not those.
+- Implies gradual weight gain over time (roughly +6-12 lb in year one), mostly muscle.
+- Back caution on glute work: ribs down and tuck pelvis slightly at lockout on hip thrusts; don't arch the lower back to finish the rep.
 
 ## Weekly average body weight
 | Week | Avg weight (lb) | Notes |
